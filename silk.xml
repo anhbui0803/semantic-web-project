@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Silk Link Specification (Silk LSL) - reproduces step 3 (5-star linking) with the
+  Silk Link Discovery Framework (http://silkframework.org/) against the live DBpedia endpoint.
+  Same linkage rule as build.py: normalised label similarity (dots removed, lower case;
+  Levenshtein + token Jaccard),
+  blocked by country, best match only, accepted at confidence >= 0.75.
+
+  Run (Silk single-machine):  java -DconfigFile=silk.xml -jar silk.jar
+  Output: data/silk_links.nt  (owl:sameAs club -> dbo:SoccerClub)
+-->
+<Silk>
+  <Prefixes>
+    <Prefix id="rdf"  namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix id="owl"  namespace="http://www.w3.org/2002/07/owl#"/>
+    <Prefix id="foaf" namespace="http://xmlns.com/foaf/0.1/"/>
+    <Prefix id="dbo"  namespace="http://dbpedia.org/ontology/"/>
+    <Prefix id="fb"   namespace="http://localhost:5000/ontology#"/>
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="footballLOD" type="file">
+      <Param name="file" value="data/football.ttl"/>
+      <Param name="format" value="Turtle"/>
+    </DataSource>
+    <DataSource id="dbpedia" type="sparqlEndpoint">
+      <Param name="endpointURI" value="https://dbpedia.org/sparql"/>
+      <Param name="pageSize" value="1000"/>
+      <Param name="retryCount" value="3"/>
+      <Param name="retryPause" value="1000"/>
+    </DataSource>
+  </DataSources>
+
+  <Interlinks>
+    <Interlink id="clubs">
+      <LinkType>owl:sameAs</LinkType>
+      <SourceDataset dataSource="footballLOD" var="a">
+        <RestrictTo>?a rdf:type fb:Club .</RestrictTo>
+      </SourceDataset>
+      <TargetDataset dataSource="dbpedia" var="b">
+        <RestrictTo>?b rdf:type dbo:SoccerClub . ?b dbo:league ?l .
+          FILTER(?l IN (&lt;http://dbpedia.org/resource/Premier_League&gt;, &lt;http://dbpedia.org/resource/EFL_Championship&gt;,
+                        &lt;http://dbpedia.org/resource/La_Liga&gt;, &lt;http://dbpedia.org/resource/Bundesliga&gt;,
+                        &lt;http://dbpedia.org/resource/Serie_A&gt;, &lt;http://dbpedia.org/resource/Ligue_1&gt;))</RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+        <Aggregate type="max">
+          <Aggregate type="average">
+            <Compare metric="levenshtein" threshold="3">
+              <TransformInput function="removeBlanks">
+                <TransformInput function="lowerCase"><TransformInput function="regexReplace"><Input path="?a/fb:name"/><Param name="regex" value="\."/><Param name="replace" value=""/></TransformInput></TransformInput>
+              </TransformInput>
+              <TransformInput function="removeBlanks">
+                <TransformInput function="lowerCase"><TransformInput function="regexReplace"><Input path="?b/rdfs:label[@lang = 'en']"/><Param name="regex" value="\."/><Param name="replace" value=""/></TransformInput></TransformInput>
+              </TransformInput>
+            </Compare>
+            <Compare metric="jaccard" threshold="0.5">
+              <TransformInput function="tokenize">
+                <TransformInput function="lowerCase"><TransformInput function="regexReplace"><Input path="?a/fb:name"/><Param name="regex" value="\."/><Param name="replace" value=""/></TransformInput></TransformInput>
+              </TransformInput>
+              <TransformInput function="tokenize">
+                <TransformInput function="lowerCase"><TransformInput function="regexReplace"><Input path="?b/rdfs:label[@lang = 'en']"/><Param name="regex" value="\."/><Param name="replace" value=""/></TransformInput></TransformInput>
+              </TransformInput>
+            </Compare>
+          </Aggregate>
+          <Compare metric="jaroWinkler" threshold="0.1">
+            <TransformInput function="lowerCase"><TransformInput function="regexReplace"><Input path="?a/fb:name"/><Param name="regex" value="\."/><Param name="replace" value=""/></TransformInput></TransformInput>
+            <TransformInput function="lowerCase"><Input path="?b/foaf:name"/></TransformInput>
+          </Compare>
+        </Aggregate>
+      </LinkageRule>
+
+      <Filter limit="1"/>
+
+      <Outputs>
+        <Output type="file" minConfidence="0.75">
+          <Param name="file" value="data/silk_links.nt"/>
+          <Param name="format" value="ntriples"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+</Silk>

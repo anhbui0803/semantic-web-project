@@ -1,0 +1,72 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fb: <http://localhost:5000/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:5000/void#DBpedia> a void:Dataset ;
+    foaf:homepage <http://dbpedia.org/> .
+
+<http://localhost:5000/void#DBpediaLinks> a void:Linkset ;
+    void:linkPredicate owl:sameAs ;
+    void:objectsTarget <http://localhost:5000/void#DBpedia> ;
+    void:subjectsTarget <http://localhost:5000/void#FootballLOD> ;
+    void:triples 107 .
+
+<http://localhost:5000/void#GeoNames> a void:Dataset ;
+    foaf:homepage <https://sws.geonames.org/> .
+
+<http://localhost:5000/void#GeoNamesLinks> a void:Linkset ;
+    void:linkPredicate owl:sameAs ;
+    void:objectsTarget <http://localhost:5000/void#GeoNames> ;
+    void:subjectsTarget <http://localhost:5000/void#FootballLOD> ;
+    void:triples 6 .
+
+<http://localhost:5000/void#Wikidata> a void:Dataset ;
+    foaf:homepage <http://www.wikidata.org/> .
+
+<http://localhost:5000/void#WikidataLinks> a void:Linkset ;
+    void:linkPredicate owl:sameAs ;
+    void:objectsTarget <http://localhost:5000/void#Wikidata> ;
+    void:subjectsTarget <http://localhost:5000/void#FootballLOD> ;
+    void:triples 107 .
+
+<http://localhost:5000/void#FootballLOD> a void:Dataset,
+        dcat:Dataset ;
+    dcterms:description "Matches, clubs and final standings of the top-5 European leagues (2023/24) as 5-star Linked Open Data."@en ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-01"^^xsd:date ;
+    dcterms:source <https://github.com/openfootball/football.json> ;
+    dcterms:title "European Football Linked Open Data 2023/24"@en ;
+    void:classPartition [ void:class fb:Club ;
+            void:entities 96 ],
+        [ void:class fb:Match ;
+            void:entities 1752 ],
+        [ void:class fb:Season ;
+            void:entities 5 ],
+        [ void:class fb:League ;
+            void:entities 5 ],
+        [ void:class fb:Country ;
+            void:entities 6 ],
+        [ void:class fb:Standing ;
+            void:entities 96 ] ;
+    void:dataDump <http://localhost:5000/dump.ttl> ;
+    void:entities 1960 ;
+    void:exampleResource <http://localhost:5000/resource/club/arsenal-fc> ;
+    void:feature <http://www.w3.org/ns/formats/JSON-LD>,
+        <http://www.w3.org/ns/formats/N-Triples>,
+        <http://www.w3.org/ns/formats/RDF_XML>,
+        <http://www.w3.org/ns/formats/Turtle> ;
+    void:sparqlEndpoint <http://localhost:5000/sparql> ;
+    void:subset <http://localhost:5000/void#DBpediaLinks>,
+        <http://localhost:5000/void#GeoNamesLinks>,
+        <http://localhost:5000/void#WikidataLinks> ;
+    void:triples 24099 ;
+    void:uriSpace "http://localhost:5000/resource/" ;
+    void:vocabulary <http://localhost:5000/ontology>,
+        schema: ;
+    foaf:homepage <http://localhost:5000/> .
+

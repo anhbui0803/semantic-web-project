@@ -1,0 +1,201 @@
+@prefix fb:      <http://localhost:5000/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema:  <https://schema.org/> .
+@prefix dbo:     <http://dbpedia.org/ontology/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+# =====================================================================
+#  European Football LOD Ontology (fb)
+#  Re-uses schema.org and the DBpedia ontology through subclass /
+#  subproperty / equivalence axioms so that the data is understandable
+#  by generic Linked Data clients.
+# =====================================================================
+
+<http://localhost:5000/ontology>
+    a owl:Ontology ;
+    dcterms:title "European Football LOD Ontology"@en ,
+                  "Ontology bóng đá châu Âu (LOD)"@vi ;
+    dcterms:description "Vocabulary for leagues, seasons, clubs, matches and league standings of the top-5 European football leagues."@en ;
+    dcterms:created "2026-10-01"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "fb" ;
+    vann:preferredNamespaceUri "http://localhost:5000/ontology#" ;
+    owl:versionInfo "1.0" .
+
+# ---------------- Declarations of re-used external terms -------------
+# (needed so that the ontology stays in OWL 2 DL when loaded in Protégé / HermiT)
+dcterms:title a owl:AnnotationProperty .   dcterms:description a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty . dcterms:license a owl:AnnotationProperty .
+dcterms:source a owl:AnnotationProperty .  vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+schema:Country a owl:Class . schema:SportsOrganization a owl:Class . schema:EventSeries a owl:Class .
+schema:SportsTeam a owl:Class . schema:SportsEvent a owl:Class .
+dbo:Country a owl:Class . dbo:SoccerLeague a owl:Class . dbo:SoccerClub a owl:Class . dbo:FootballMatch a owl:Class .
+schema:location a owl:ObjectProperty . schema:superEvent a owl:ObjectProperty . schema:competitor a owl:ObjectProperty .
+schema:homeTeam a owl:ObjectProperty . schema:awayTeam a owl:ObjectProperty .
+schema:name a owl:DatatypeProperty . schema:startDate a owl:DatatypeProperty .
+
+# ----------------------------- Classes ------------------------------
+
+fb:Country a owl:Class ;
+    rdfs:label "Country"@en , "Quốc gia"@vi ;
+    rdfs:subClassOf schema:Country ;
+    owl:equivalentClass dbo:Country .
+
+fb:League a owl:Class ;
+    rdfs:label "League"@en , "Giải đấu"@vi ;
+    rdfs:comment "A national football league competition (e.g. Premier League)."@en ;
+    rdfs:subClassOf schema:SportsOrganization ;
+    owl:equivalentClass dbo:SoccerLeague .
+
+fb:Season a owl:Class ;
+    rdfs:label "Season"@en , "Mùa giải"@vi ;
+    rdfs:comment "One edition of a league, e.g. Premier League 2023/24."@en ;
+    rdfs:subClassOf schema:EventSeries .
+
+fb:Club a owl:Class ;
+    rdfs:label "Club"@en , "Câu lạc bộ"@vi ;
+    rdfs:subClassOf schema:SportsTeam ;
+    owl:equivalentClass dbo:SoccerClub .
+
+fb:Match a owl:Class ;
+    rdfs:label "Match"@en , "Trận đấu"@vi ;
+    rdfs:subClassOf schema:SportsEvent ;
+    owl:equivalentClass dbo:FootballMatch .
+
+fb:Standing a owl:Class ;
+    rdfs:label "Standing"@en , "Thứ hạng"@vi ;
+    rdfs:comment "Final table row of one club in one season."@en .
+
+fb:MatchResult a owl:Class ;
+    rdfs:label "Match result"@en , "Kết quả trận đấu"@vi ;
+    owl:oneOf ( fb:HomeWin fb:Draw fb:AwayWin ) .
+
+fb:HomeWin a fb:MatchResult ; rdfs:label "Home win"@en , "Chủ nhà thắng"@vi .
+fb:Draw    a fb:MatchResult ; rdfs:label "Draw"@en , "Hòa"@vi .
+fb:AwayWin a fb:MatchResult ; rdfs:label "Away win"@en , "Đội khách thắng"@vi .
+
+fb:HomeWin owl:differentFrom fb:Draw , fb:AwayWin . fb:Draw owl:differentFrom fb:AwayWin .
+
+[] a owl:AllDisjointClasses ;
+   owl:members ( fb:Country fb:League fb:Season fb:Club fb:Match fb:Standing fb:MatchResult ) .
+
+# ------------------------- Object properties ------------------------
+
+fb:country a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "country"@en , "quốc gia"@vi ;
+    rdfs:domain [ owl:unionOf ( fb:League fb:Club ) ] ;
+    rdfs:range fb:Country ;
+    rdfs:subPropertyOf schema:location .
+
+fb:ofLeague a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "of league"@en , "thuộc giải"@vi ;
+    rdfs:domain fb:Season ; rdfs:range fb:League .
+
+fb:hasSeason a owl:ObjectProperty ;
+    rdfs:label "has season"@en ;
+    owl:inverseOf fb:ofLeague .
+
+fb:inSeason a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "in season"@en , "thuộc mùa giải"@vi ;
+    rdfs:domain [ owl:unionOf ( fb:Match fb:Standing ) ] ;
+    rdfs:range fb:Season ;
+    rdfs:subPropertyOf schema:superEvent .
+
+fb:participant a owl:ObjectProperty ;
+    rdfs:label "participant"@en , "đội tham dự"@vi ;
+    rdfs:domain fb:Season ; rdfs:range fb:Club .
+
+fb:competitor a owl:ObjectProperty ;
+    rdfs:label "competitor"@en , "đội thi đấu"@vi ;
+    rdfs:domain fb:Match ; rdfs:range fb:Club ;
+    rdfs:subPropertyOf schema:competitor .
+
+fb:homeTeam a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "home team"@en , "đội chủ nhà"@vi ;
+    rdfs:subPropertyOf fb:competitor , schema:homeTeam ;
+    rdfs:domain fb:Match ; rdfs:range fb:Club .
+
+fb:awayTeam a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "away team"@en , "đội khách"@vi ;
+    rdfs:subPropertyOf fb:competitor , schema:awayTeam ;
+    rdfs:domain fb:Match ; rdfs:range fb:Club ;
+    owl:propertyDisjointWith fb:homeTeam .
+
+fb:winner a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "winner"@en , "đội thắng"@vi ;
+    rdfs:subPropertyOf fb:competitor ;
+    rdfs:domain fb:Match ; rdfs:range fb:Club .
+
+fb:result a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "result"@en , "kết quả"@vi ;
+    rdfs:domain fb:Match ; rdfs:range fb:MatchResult .
+
+fb:team a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "team"@en , "đội"@vi ;
+    rdfs:domain fb:Standing ; rdfs:range fb:Club .
+
+fb:champion a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "champion"@en , "nhà vô địch"@vi ;
+    rdfs:domain fb:Season ; rdfs:range fb:Club ;
+    rdfs:subPropertyOf fb:participant .
+
+# -------------------------- Data properties -------------------------
+
+fb:name a owl:DatatypeProperty ;
+    rdfs:label "name"@en , "tên"@vi ;
+    rdfs:subPropertyOf schema:name ; rdfs:range rdfs:Literal .  # names may carry a language tag (rdf:langString)
+
+fb:seasonLabel a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "season label"@en ; rdfs:domain fb:Season ; rdfs:range xsd:string .
+
+fb:kickOff a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "kick-off (local date and time)"@en , "thời điểm bóng lăn"@vi ;
+    rdfs:comment "Local date-time of the kick-off. xsd:dateTime is used (not xsd:date / xsd:time) because only it belongs to the OWL 2 datatype map."@en ;
+    rdfs:subPropertyOf schema:startDate ;
+    rdfs:domain fb:Match ; rdfs:range xsd:dateTime .
+
+fb:round a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "round (matchday)"@en , "vòng đấu"@vi ;
+    rdfs:domain fb:Match ; rdfs:range xsd:integer .
+
+fb:homeScore a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "home goals (full time)"@en ; rdfs:domain fb:Match ; rdfs:range xsd:nonNegativeInteger .
+fb:awayScore a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "away goals (full time)"@en ; rdfs:domain fb:Match ; rdfs:range xsd:nonNegativeInteger .
+fb:homeHalfTimeScore a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "home goals (half time)"@en ; rdfs:domain fb:Match ; rdfs:range xsd:nonNegativeInteger .
+fb:awayHalfTimeScore a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "away goals (half time)"@en ; rdfs:domain fb:Match ; rdfs:range xsd:nonNegativeInteger .
+
+fb:rank a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "rank"@en , "hạng"@vi ; rdfs:domain fb:Standing ; rdfs:range xsd:positiveInteger .
+fb:played a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "matches played"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:won a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "won"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:drawn a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "drawn"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:lost a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "lost"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:goalsFor a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "goals for"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:goalsAgainst a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "goals against"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+fb:goalDifference a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "goal difference"@en ; rdfs:domain fb:Standing ; rdfs:range xsd:integer .
+fb:points a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "points"@en , "điểm"@vi ; rdfs:domain fb:Standing ; rdfs:range xsd:nonNegativeInteger .
+
+# A club is a Club that competes in at least one season (OWL restriction example)
+fb:Club rdfs:subClassOf [ a owl:Restriction ;
+                          owl:onProperty [ owl:inverseOf fb:participant ] ;
+                          owl:someValuesFrom fb:Season ] .
+# Every match has exactly one home team and one away team
+fb:Match rdfs:subClassOf
+    [ a owl:Restriction ; owl:onProperty fb:homeTeam ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass fb:Club ] ,
+    [ a owl:Restriction ; owl:onProperty fb:awayTeam ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass fb:Club ] .

@@ -1,0 +1,433 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<http://localhost:5000/resource/club/1-fc-heidenheim-1846> rdfs:seeAlso <https://en.wikipedia.org/wiki/1._FC_Heidenheim> ;
+    owl:sameAs dbr:1._FC_Heidenheim,
+        wd:Q162251 .
+
+<http://localhost:5000/resource/club/1-fc-koln> rdfs:seeAlso <https://en.wikipedia.org/wiki/1._FC_Köln> ;
+    owl:sameAs dbr:1._FC_Köln,
+        wd:Q104770 .
+
+<http://localhost:5000/resource/club/1-fc-union-berlin> rdfs:seeAlso <https://en.wikipedia.org/wiki/1._FC_Union_Berlin> ;
+    owl:sameAs dbr:1._FC_Union_Berlin,
+        wd:Q141971 .
+
+<http://localhost:5000/resource/club/1-fsv-mainz-05> rdfs:seeAlso <https://en.wikipedia.org/wiki/1._FSV_Mainz_05> ;
+    owl:sameAs dbr:1._FSV_Mainz_05,
+        wd:Q105254 .
+
+<http://localhost:5000/resource/club/ac-milan> rdfs:seeAlso <https://en.wikipedia.org/wiki/A.C._Milan> ;
+    owl:sameAs dbr:A.C._Milan,
+        wd:Q1543 .
+
+<http://localhost:5000/resource/club/ac-monza> rdfs:seeAlso <https://en.wikipedia.org/wiki/A.C._Monza> ;
+    owl:sameAs dbr:A.C._Monza,
+        wd:Q289482 .
+
+<http://localhost:5000/resource/club/acf-fiorentina> rdfs:seeAlso <https://en.wikipedia.org/wiki/ACF_Fiorentina> ;
+    owl:sameAs dbr:ACF_Fiorentina,
+        wd:Q2052 .
+
+<http://localhost:5000/resource/club/afc-bournemouth> rdfs:seeAlso <https://en.wikipedia.org/wiki/AFC_Bournemouth> ;
+    owl:sameAs dbr:AFC_Bournemouth,
+        wd:Q19568 .
+
+<http://localhost:5000/resource/club/arsenal-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Arsenal_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Arsenal_F.C.>,
+        wd:Q9617 .
+
+<http://localhost:5000/resource/club/as-monaco-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/AS_Monaco_FC> ;
+    owl:sameAs dbr:AS_Monaco_FC,
+        wd:Q180305 .
+
+<http://localhost:5000/resource/club/as-roma> rdfs:seeAlso <https://en.wikipedia.org/wiki/A.S._Roma> ;
+    owl:sameAs dbr:A.S._Roma,
+        wd:Q2739 .
+
+<http://localhost:5000/resource/club/aston-villa-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Aston_Villa_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Aston_Villa_F.C.>,
+        wd:Q18711 .
+
+<http://localhost:5000/resource/club/atalanta-bc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Atalanta_B.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Atalanta_B.C.>,
+        wd:Q1886 .
+
+<http://localhost:5000/resource/club/athletic-club> rdfs:seeAlso <https://en.wikipedia.org/wiki/Athletic_Bilbao> ;
+    owl:sameAs dbr:Athletic_Bilbao,
+        wd:Q8687 .
+
+<http://localhost:5000/resource/club/bayer-04-leverkusen> rdfs:seeAlso <https://en.wikipedia.org/wiki/Bayer_04_Leverkusen> ;
+    owl:sameAs dbr:Bayer_04_Leverkusen,
+        wd:Q104761 .
+
+<http://localhost:5000/resource/club/bologna-fc-1909> rdfs:seeAlso <https://en.wikipedia.org/wiki/Bologna_F.C._1909> ;
+    owl:sameAs dbr:Bologna_F.C._1909,
+        wd:Q1893 .
+
+<http://localhost:5000/resource/club/borussia-dortmund> rdfs:seeAlso <https://en.wikipedia.org/wiki/Borussia_Dortmund> ;
+    owl:sameAs dbr:Borussia_Dortmund,
+        wd:Q41420 .
+
+<http://localhost:5000/resource/club/borussia-monchengladbach> rdfs:seeAlso <https://en.wikipedia.org/wiki/Borussia_Mönchengladbach> ;
+    owl:sameAs dbr:Borussia_Mönchengladbach,
+        wd:Q101959 .
+
+<http://localhost:5000/resource/club/brentford-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Brentford_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Brentford_F.C.>,
+        wd:Q19571 .
+
+<http://localhost:5000/resource/club/brighton-hove-albion-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Brighton_&_Hove_Albion_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Brighton_&_Hove_Albion_F.C.>,
+        wd:Q19453 .
+
+<http://localhost:5000/resource/club/burnley-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Burnley_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Burnley_F.C.>,
+        wd:Q19458 .
+
+<http://localhost:5000/resource/club/ca-osasuna> rdfs:seeAlso <https://en.wikipedia.org/wiki/CA_Osasuna> ;
+    owl:sameAs dbr:CA_Osasuna,
+        wd:Q10286 .
+
+<http://localhost:5000/resource/club/cadiz-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Cádiz_CF> ;
+    owl:sameAs dbr:Cádiz_CF,
+        wd:Q460448 .
+
+<http://localhost:5000/resource/club/cagliari-calcio> rdfs:seeAlso <https://en.wikipedia.org/wiki/Cagliari_Calcio> ;
+    owl:sameAs dbr:Cagliari_Calcio,
+        wd:Q1900 .
+
+<http://localhost:5000/resource/club/chelsea-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Chelsea_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Chelsea_F.C.>,
+        wd:Q9616 .
+
+<http://localhost:5000/resource/club/clermont-foot-63> rdfs:seeAlso <https://en.wikipedia.org/wiki/Clermont_Foot> ;
+    owl:sameAs dbr:Clermont_Foot,
+        wd:Q870182 .
+
+<http://localhost:5000/resource/club/club-atletico-de-madrid> rdfs:seeAlso <https://en.wikipedia.org/wiki/Atlético_Madrid> ;
+    owl:sameAs dbr:Atlético_Madrid,
+        wd:Q8701 .
+
+<http://localhost:5000/resource/club/crystal-palace-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Crystal_Palace_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Crystal_Palace_F.C.>,
+        wd:Q19467 .
+
+<http://localhost:5000/resource/club/deportivo-alaves> rdfs:seeAlso <https://en.wikipedia.org/wiki/Deportivo_Alavés> ;
+    owl:sameAs dbr:Deportivo_Alavés,
+        wd:Q223620 .
+
+<http://localhost:5000/resource/club/eintracht-frankfurt> rdfs:seeAlso <https://en.wikipedia.org/wiki/Eintracht_Frankfurt> ;
+    owl:sameAs dbr:Eintracht_Frankfurt,
+        wd:Q38245 .
+
+<http://localhost:5000/resource/club/empoli-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Empoli_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Empoli_F.C.>,
+        wd:Q6703 .
+
+<http://localhost:5000/resource/club/everton-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Everton_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Everton_F.C.>,
+        wd:Q5794 .
+
+<http://localhost:5000/resource/club/fc-augsburg> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Augsburg> ;
+    owl:sameAs dbr:FC_Augsburg,
+        wd:Q15755 .
+
+<http://localhost:5000/resource/club/fc-barcelona> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Barcelona> ;
+    owl:sameAs dbr:FC_Barcelona,
+        wd:Q7156 .
+
+<http://localhost:5000/resource/club/fc-bayern-munchen> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Bayern_Munich> ;
+    owl:sameAs dbr:FC_Bayern_Munich,
+        wd:Q15789 .
+
+<http://localhost:5000/resource/club/fc-internazionale-milano> rdfs:seeAlso <https://en.wikipedia.org/wiki/Inter_Milan> ;
+    owl:sameAs dbr:Inter_Milan,
+        wd:Q631 .
+
+<http://localhost:5000/resource/club/fc-lorient> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Lorient> ;
+    owl:sameAs dbr:FC_Lorient,
+        wd:Q48911 .
+
+<http://localhost:5000/resource/club/fc-metz> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Metz> ;
+    owl:sameAs dbr:FC_Metz,
+        wd:Q221525 .
+
+<http://localhost:5000/resource/club/fc-nantes> rdfs:seeAlso <https://en.wikipedia.org/wiki/FC_Nantes> ;
+    owl:sameAs dbr:FC_Nantes,
+        wd:Q192071 .
+
+<http://localhost:5000/resource/club/frosinone-calcio> rdfs:seeAlso <https://en.wikipedia.org/wiki/Frosinone_Calcio> ;
+    owl:sameAs dbr:Frosinone_Calcio,
+        wd:Q845043 .
+
+<http://localhost:5000/resource/club/fulham-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Fulham_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Fulham_F.C.>,
+        wd:Q18708 .
+
+<http://localhost:5000/resource/club/genoa-cfc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Genoa_C.F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Genoa_C.F.C.>,
+        wd:Q2074 .
+
+<http://localhost:5000/resource/club/getafe-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Getafe_CF> ;
+    owl:sameAs dbr:Getafe_CF,
+        wd:Q8806 .
+
+<http://localhost:5000/resource/club/girona-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Girona_FC> ;
+    owl:sameAs dbr:Girona_FC,
+        wd:Q11945 .
+
+<http://localhost:5000/resource/club/granada-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Granada_CF> ;
+    owl:sameAs dbr:Granada_CF,
+        wd:Q8812 .
+
+<http://localhost:5000/resource/club/hellas-verona-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Hellas_Verona_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Hellas_Verona_F.C.>,
+        wd:Q8639 .
+
+<http://localhost:5000/resource/club/juventus-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Juventus_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Juventus_F.C.>,
+        wd:Q1422 .
+
+<http://localhost:5000/resource/club/le-havre-ac> rdfs:seeAlso <https://en.wikipedia.org/wiki/Le_Havre_AC> ;
+    owl:sameAs dbr:Le_Havre_AC,
+        wd:Q328658 .
+
+<http://localhost:5000/resource/club/lille-osc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Lille_OSC> ;
+    owl:sameAs dbr:Lille_OSC,
+        wd:Q19516 .
+
+<http://localhost:5000/resource/club/liverpool-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Liverpool_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Liverpool_F.C.>,
+        wd:Q1130849 .
+
+<http://localhost:5000/resource/club/luton-town-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Luton_Town_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Luton_Town_F.C.>,
+        wd:Q18520 .
+
+<http://localhost:5000/resource/club/manchester-city-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Manchester_City_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Manchester_City_F.C.>,
+        wd:Q50602 .
+
+<http://localhost:5000/resource/club/manchester-united-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Manchester_United_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Manchester_United_F.C.>,
+        wd:Q18656 .
+
+<http://localhost:5000/resource/club/montpellier-hsc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Montpellier_HSC> ;
+    owl:sameAs dbr:Montpellier_HSC,
+        wd:Q19513 .
+
+<http://localhost:5000/resource/club/newcastle-united-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Newcastle_United_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Newcastle_United_F.C.>,
+        wd:Q18716 .
+
+<http://localhost:5000/resource/club/nottingham-forest-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Nottingham_Forest_F.C.>,
+        wd:Q19490 .
+
+<http://localhost:5000/resource/club/ogc-nice> rdfs:seeAlso <https://en.wikipedia.org/wiki/OGC_Nice> ;
+    owl:sameAs dbr:OGC_Nice,
+        wd:Q185163 .
+
+<http://localhost:5000/resource/club/olympique-de-marseille> rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympique_de_Marseille> ;
+    owl:sameAs dbr:Olympique_de_Marseille,
+        wd:Q132885 .
+
+<http://localhost:5000/resource/club/olympique-lyonnais> rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympique_Lyonnais> ;
+    owl:sameAs dbr:Olympique_Lyonnais,
+        wd:Q704 .
+
+<http://localhost:5000/resource/club/paris-saint-germain-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Paris_Saint-Germain_F.C.>,
+        wd:Q483020 .
+
+<http://localhost:5000/resource/club/racing-club-de-lens> rdfs:seeAlso <https://en.wikipedia.org/wiki/RC_Lens> ;
+    owl:sameAs dbr:RC_Lens,
+        wd:Q191843 .
+
+<http://localhost:5000/resource/club/rayo-vallecano-de-madrid> rdfs:seeAlso <https://en.wikipedia.org/wiki/Rayo_Vallecano> ;
+    owl:sameAs dbr:Rayo_Vallecano,
+        wd:Q10300 .
+
+<http://localhost:5000/resource/club/rb-leipzig> rdfs:seeAlso <https://en.wikipedia.org/wiki/RB_Leipzig> ;
+    owl:sameAs dbr:RB_Leipzig,
+        wd:Q702455 .
+
+<http://localhost:5000/resource/club/rc-celta-de-vigo> rdfs:seeAlso <https://en.wikipedia.org/wiki/RC_Celta_de_Vigo> ;
+    owl:sameAs dbr:RC_Celta_de_Vigo,
+        wd:Q8749 .
+
+<http://localhost:5000/resource/club/rc-strasbourg-alsace> rdfs:seeAlso <https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace> ;
+    owl:sameAs dbr:RC_Strasbourg_Alsace,
+        wd:Q126334 .
+
+<http://localhost:5000/resource/club/rcd-mallorca> rdfs:seeAlso <https://en.wikipedia.org/wiki/RCD_Mallorca> ;
+    owl:sameAs dbr:RCD_Mallorca,
+        wd:Q8835 .
+
+<http://localhost:5000/resource/club/real-betis-balompie> rdfs:seeAlso <https://en.wikipedia.org/wiki/Real_Betis> ;
+    owl:sameAs dbr:Real_Betis,
+        wd:Q8723 .
+
+<http://localhost:5000/resource/club/real-madrid-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Real_Madrid_CF> ;
+    owl:sameAs dbr:Real_Madrid_CF,
+        wd:Q8682 .
+
+<http://localhost:5000/resource/club/real-sociedad-de-futbol> rdfs:seeAlso <https://en.wikipedia.org/wiki/Real_Sociedad> ;
+    owl:sameAs dbr:Real_Sociedad,
+        wd:Q10315 .
+
+<http://localhost:5000/resource/club/sc-freiburg> rdfs:seeAlso <https://en.wikipedia.org/wiki/SC_Freiburg> ;
+    owl:sameAs dbr:SC_Freiburg,
+        wd:Q106394 .
+
+<http://localhost:5000/resource/club/sevilla-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Sevilla_FC> ;
+    owl:sameAs dbr:Sevilla_FC,
+        wd:Q10329 .
+
+<http://localhost:5000/resource/club/sheffield-united-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Sheffield_United_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Sheffield_United_F.C.>,
+        wd:Q19607 .
+
+<http://localhost:5000/resource/club/ss-lazio> rdfs:seeAlso <https://en.wikipedia.org/wiki/S.S._Lazio> ;
+    owl:sameAs dbr:S.S._Lazio,
+        wd:Q2609 .
+
+<http://localhost:5000/resource/club/ssc-napoli> rdfs:seeAlso <https://en.wikipedia.org/wiki/S.S.C._Napoli> ;
+    owl:sameAs dbr:S.S.C._Napoli,
+        wd:Q2641 .
+
+<http://localhost:5000/resource/club/stade-brestois-29> rdfs:seeAlso <https://en.wikipedia.org/wiki/Stade_Brestois_29> ;
+    owl:sameAs dbr:Stade_Brestois_29,
+        wd:Q218372 .
+
+<http://localhost:5000/resource/club/stade-de-reims> rdfs:seeAlso <https://en.wikipedia.org/wiki/Stade_de_Reims> ;
+    owl:sameAs dbr:Stade_de_Reims,
+        wd:Q208228 .
+
+<http://localhost:5000/resource/club/stade-rennais-fc-1901> rdfs:seeAlso <https://en.wikipedia.org/wiki/Stade_Rennais_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Stade_Rennais_F.C.>,
+        wd:Q19509 .
+
+<http://localhost:5000/resource/club/sv-darmstadt-98> rdfs:seeAlso <https://en.wikipedia.org/wiki/SV_Darmstadt_98> ;
+    owl:sameAs dbr:SV_Darmstadt_98,
+        wd:Q479351 .
+
+<http://localhost:5000/resource/club/sv-werder-bremen> rdfs:seeAlso <https://en.wikipedia.org/wiki/SV_Werder_Bremen> ;
+    owl:sameAs dbr:SV_Werder_Bremen,
+        wd:Q51976 .
+
+<http://localhost:5000/resource/club/torino-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Torino_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Torino_F.C.>,
+        wd:Q2768 .
+
+<http://localhost:5000/resource/club/tottenham-hotspur-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Tottenham_Hotspur_F.C.>,
+        wd:Q18741 .
+
+<http://localhost:5000/resource/club/toulouse-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Toulouse_FC> ;
+    owl:sameAs dbr:Toulouse_FC,
+        wd:Q19518 .
+
+<http://localhost:5000/resource/club/tsg-1899-hoffenheim> rdfs:seeAlso <https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim> ;
+    owl:sameAs dbr:TSG_1899_Hoffenheim,
+        wd:Q22707 .
+
+<http://localhost:5000/resource/club/ud-almeria> rdfs:seeAlso <https://en.wikipedia.org/wiki/UD_Almería> ;
+    owl:sameAs dbr:UD_Almería,
+        wd:Q10407 .
+
+<http://localhost:5000/resource/club/ud-las-palmas> rdfs:seeAlso <https://en.wikipedia.org/wiki/UD_Las_Palmas> ;
+    owl:sameAs dbr:UD_Las_Palmas,
+        wd:Q11979 .
+
+<http://localhost:5000/resource/club/udinese-calcio> rdfs:seeAlso <https://en.wikipedia.org/wiki/Udinese_Calcio> ;
+    owl:sameAs dbr:Udinese_Calcio,
+        wd:Q2798 .
+
+<http://localhost:5000/resource/club/us-lecce> rdfs:seeAlso <https://en.wikipedia.org/wiki/U.S._Lecce> ;
+    owl:sameAs dbr:U.S._Lecce,
+        wd:Q13391 .
+
+<http://localhost:5000/resource/club/us-salernitana-1919> rdfs:seeAlso <https://en.wikipedia.org/wiki/U.S._Salernitana_1919> ;
+    owl:sameAs dbr:U.S._Salernitana_1919,
+        wd:Q847587 .
+
+<http://localhost:5000/resource/club/us-sassuolo-calcio> rdfs:seeAlso <https://en.wikipedia.org/wiki/U.S._Sassuolo_Calcio> ;
+    owl:sameAs dbr:U.S._Sassuolo_Calcio,
+        wd:Q8603 .
+
+<http://localhost:5000/resource/club/valencia-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Valencia_CF> ;
+    owl:sameAs dbr:Valencia_CF,
+        wd:Q10333 .
+
+<http://localhost:5000/resource/club/vfb-stuttgart> rdfs:seeAlso <https://en.wikipedia.org/wiki/VfB_Stuttgart> ;
+    owl:sameAs dbr:VfB_Stuttgart,
+        wd:Q4512 .
+
+<http://localhost:5000/resource/club/vfl-bochum-1848> rdfs:seeAlso <https://en.wikipedia.org/wiki/VfL_Bochum> ;
+    owl:sameAs dbr:VfL_Bochum,
+        wd:Q105861 .
+
+<http://localhost:5000/resource/club/vfl-wolfsburg> rdfs:seeAlso <https://en.wikipedia.org/wiki/VfL_Wolfsburg> ;
+    owl:sameAs dbr:VfL_Wolfsburg,
+        wd:Q101859 .
+
+<http://localhost:5000/resource/club/villarreal-cf> rdfs:seeAlso <https://en.wikipedia.org/wiki/Villarreal_CF> ;
+    owl:sameAs dbr:Villarreal_CF,
+        wd:Q12297 .
+
+<http://localhost:5000/resource/club/west-ham-united-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/West_Ham_United_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/West_Ham_United_F.C.>,
+        wd:Q18747 .
+
+<http://localhost:5000/resource/club/wolverhampton-wanderers-fc> rdfs:seeAlso <https://en.wikipedia.org/wiki/Wolverhampton_Wanderers_F.C.> ;
+    owl:sameAs <http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.>,
+        wd:Q19500 .
+
+<http://localhost:5000/resource/country/england> owl:sameAs dbr:England,
+        wd:Q21,
+        <https://sws.geonames.org/6269131/> .
+
+<http://localhost:5000/resource/country/france> owl:sameAs dbr:France,
+        wd:Q142,
+        <https://sws.geonames.org/3017382/> .
+
+<http://localhost:5000/resource/country/germany> owl:sameAs dbr:Germany,
+        wd:Q183,
+        <https://sws.geonames.org/2921044/> .
+
+<http://localhost:5000/resource/country/italy> owl:sameAs dbr:Italy,
+        wd:Q38,
+        <https://sws.geonames.org/3175395/> .
+
+<http://localhost:5000/resource/country/monaco> owl:sameAs dbr:Monaco,
+        wd:Q235,
+        <https://sws.geonames.org/2993457/> .
+
+<http://localhost:5000/resource/country/spain> owl:sameAs dbr:Spain,
+        wd:Q29,
+        <https://sws.geonames.org/2510769/> .
+
+<http://localhost:5000/resource/league/bundesliga> rdfs:seeAlso <https://en.wikipedia.org/wiki/Bundesliga> ;
+    owl:sameAs dbr:Bundesliga,
+        wd:Q82595 .
+
+<http://localhost:5000/resource/league/la-liga> rdfs:seeAlso <https://en.wikipedia.org/wiki/La_Liga> ;
+    owl:sameAs dbr:La_Liga,
+        wd:Q324867 .
+
+<http://localhost:5000/resource/league/ligue-1> rdfs:seeAlso <https://en.wikipedia.org/wiki/Ligue_1> ;
+    owl:sameAs dbr:Ligue_1,
+        wd:Q13394 .
+
+<http://localhost:5000/resource/league/premier-league> rdfs:seeAlso <https://en.wikipedia.org/wiki/Premier_League> ;
+    owl:sameAs dbr:Premier_League,
+        wd:Q9448 .
+
+<http://localhost:5000/resource/league/serie-a> rdfs:seeAlso <https://en.wikipedia.org/wiki/Serie_A> ;
+    owl:sameAs dbr:Serie_A,
+        wd:Q15804 .
+
