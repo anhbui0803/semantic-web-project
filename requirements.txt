@@ -1,4 +1,4 @@
-rdflib>=7.0
-flask>=3.0
-pyshacl>=0.25    # python build.py --check (SHACL)
-owlready2>=0.45  # python build.py --check (HermiT OWL reasoner, needs Java)
+rdflib>=7.0.0
+flask>=3.0.0
+SPARQLWrapper>=2.0.0
+gunicorn>=22.0.0

@@ -1,0 +1,399 @@
+# ============================================================
+#  Football Linked Data — Example SPARQL Queries
+#  Dataset: http://semantic-football.org/data/
+# ============================================================
+#
+#  This file is the single source of truth for the example
+#  queries. sparql_terminal.py, app.py and validate.py all read
+#  it, so a query added here appears everywhere.
+#
+#  Format of each block:
+#     #@name: <identifier used by  :run <name> >
+#     #@desc: <one-line description>
+#     #@requires: links        (optional — needs the 5★ links)
+#     #@requires: network      (optional — query uses SERVICE)
+#     <SPARQL text>
+#
+#  PREFIX declarations are injected automatically (see
+#  scripts/common.py → PREFIX_BLOCK). They are listed here for
+#  reference when pasting a query into another tool:
+#
+#  PREFIX onto:    <http://semantic-football.org/ontology#>
+#  PREFIX data:    <http://semantic-football.org/data/>
+#  PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+#  PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+#  PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+#  PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+#  PREFIX schema:  <https://schema.org/>
+#  PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+#  PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+#  PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+#  PREFIX dcterms: <http://purl.org/dc/terms/>
+#  PREFIX void:    <http://rdfs.org/ns/void#>
+#  PREFIX dbo:     <http://dbpedia.org/ontology/>
+#  PREFIX club:    <http://semantic-football.org/data/club/>     (likewise player:,
+#                  manager:, stadium:, match:, goal:, transfer:, league:, season:,
+#                  city:, nationality:)
+#  PREFIX dbr:     <http://dbpedia.org/resource/>
+#  PREFIX wd:      <http://www.wikidata.org/entity/>
+# ============================================================
+
+
+#@name: all_clubs
+#@desc: Premier League clubs with city and year founded
+SELECT ?name ?city ?founded
+WHERE {
+    ?club a onto:FootballClub ;
+          onto:name           ?name ;
+          onto:city           ?city ;
+          onto:participatesIn league:premier_league .
+    OPTIONAL { ?club onto:founded ?founded }
+}
+ORDER BY ?name
+
+
+#@name: squad
+#@desc: Arsenal players in the dataset — name, position, nationality, height
+SELECT ?playerName ?position ?nationality ?height
+WHERE {
+    ?player a onto:Player ;
+            onto:name     ?playerName ;
+            onto:playsFor club:arsenal .
+    OPTIONAL { ?player onto:hasPosition ?pos .
+               ?pos    onto:shortName   ?position }
+    OPTIONAL { ?player onto:hasNationality ?nat .
+               ?nat    onto:name          ?nationality }
+    OPTIONAL { ?player onto:height ?height }
+}
+ORDER BY ?position ?playerName
+
+
+#@name: top_scorers
+#@desc: Top 10 goal scorers (own goals excluded)
+SELECT ?playerName ?clubName (COUNT(?goal) AS ?goals)
+WHERE {
+    ?goal a onto:Goal ;
+          onto:scoredBy      ?player ;
+          onto:scoredForTeam ?club ;
+          onto:isOwnGoal     false .
+    ?player onto:name ?playerName .
+    ?club   onto:name ?clubName .
+}
+GROUP BY ?playerName ?clubName
+ORDER BY DESC(?goals) ?playerName
+LIMIT 10
+
+
+#@name: match_results
+#@desc: All match results with score, date and match week
+SELECT ?homeClub ?awayClub ?homeScore ?awayScore ?matchDate ?week
+WHERE {
+    ?match a onto:Match ;
+           onto:homeTeam  ?home ;
+           onto:awayTeam  ?away ;
+           onto:homeScore ?homeScore ;
+           onto:awayScore ?awayScore ;
+           onto:matchDate ?matchDate ;
+           onto:matchWeek ?week .
+    ?home onto:shortName ?homeClub .
+    ?away onto:shortName ?awayClub .
+}
+ORDER BY ?matchDate
+
+
+#@name: standings
+#@desc: League table computed from the matches (W/D/L, goals, points)
+SELECT ?club
+       (COUNT(?match) AS ?played)
+       (SUM(?w) AS ?won) (SUM(?d) AS ?drawn) (SUM(?l) AS ?lost)
+       (SUM(?gf) AS ?goalsFor) (SUM(?ga) AS ?goalsAgainst)
+       (SUM(?gf) - SUM(?ga) AS ?goalDiff)
+       (3 * SUM(?w) + SUM(?d) AS ?points)
+WHERE {
+    {
+        ?match onto:homeTeam ?c ; onto:homeScore ?gf ; onto:awayScore ?ga .
+    } UNION {
+        ?match onto:awayTeam ?c ; onto:awayScore ?gf ; onto:homeScore ?ga .
+    }
+    ?c onto:shortName ?club .
+    BIND(IF(?gf > ?ga, 1, 0) AS ?w)
+    BIND(IF(?gf = ?ga, 1, 0) AS ?d)
+    BIND(IF(?gf < ?ga, 1, 0) AS ?l)
+}
+GROUP BY ?club
+ORDER BY DESC(?points) DESC(?goalDiff) DESC(?goalsFor)
+
+
+#@name: fewest_defeats
+#@desc: Clubs with at most one defeat in the dataset (uses onto:wonBy)
+SELECT ?clubName
+       (COUNT(?match) AS ?played)
+       (SUM(?w) AS ?wins) (SUM(?d) AS ?draws) (SUM(?l) AS ?losses)
+WHERE {
+    ?club a onto:FootballClub ;
+          onto:name ?clubName .
+    ?match (onto:homeTeam|onto:awayTeam) ?club .
+    OPTIONAL { ?match onto:wonBy ?winner }
+    BIND(IF(BOUND(?winner) && ?winner = ?club, 1, 0) AS ?w)
+    BIND(IF(!BOUND(?winner), 1, 0)                   AS ?d)
+    BIND(IF(BOUND(?winner) && ?winner != ?club, 1, 0) AS ?l)
+}
+GROUP BY ?clubName
+HAVING (SUM(?l) <= 1)
+ORDER BY DESC(?wins)
+
+
+#@name: high_value_transfers
+#@desc: Transfers with a reported initial fee above £50 million
+SELECT ?playerName ?fromClub ?toClub ?fee ?date
+WHERE {
+    ?transfer a onto:Transfer ;
+              onto:transferredPlayer ?player ;
+              onto:fromClub          ?from ;
+              onto:toClub            ?to ;
+              onto:transferFee       ?fee .
+    FILTER (?fee > 50)
+    ?player onto:name ?playerName .
+    ?from   onto:name ?fromClub .
+    ?to     onto:name ?toClub .
+    OPTIONAL { ?transfer onto:transferDate ?date }
+}
+ORDER BY DESC(?fee)
+
+
+#@name: stadiums
+#@requires: links
+#@desc: Stadiums with capacity and the GeoNames / Wikidata URI of their city
+SELECT ?stadiumName ?capacity ?cityName ?geonames ?wikidataCity
+WHERE {
+    ?stadium a onto:Stadium ;
+             onto:name      ?stadiumName ;
+             onto:capacity  ?capacity ;
+             onto:locatedIn ?city .
+    ?city onto:name ?cityName .
+    OPTIONAL { ?city owl:sameAs ?geonames .
+               FILTER(STRSTARTS(STR(?geonames), "http://sws.geonames.org/")) }
+    OPTIONAL { ?city owl:sameAs ?wikidataCity .
+               FILTER(STRSTARTS(STR(?wikidataCity), "http://www.wikidata.org/entity/")) }
+}
+ORDER BY DESC(?capacity)
+
+
+#@name: external_links
+#@requires: links
+#@desc: DBpedia owl:sameAs links of all clubs (5-star links)
+SELECT ?clubName ?dbpediaURI
+WHERE {
+    ?club a onto:FootballClub ;
+          onto:name  ?clubName ;
+          owl:sameAs ?dbpediaURI .
+    FILTER(STRSTARTS(STR(?dbpediaURI), "http://dbpedia.org/resource/"))
+}
+ORDER BY ?clubName
+
+
+#@name: wikidata_players
+#@requires: links
+#@desc: Players with their Wikidata owl:sameAs link
+SELECT ?playerName ?wikidataURI
+WHERE {
+    ?player a onto:Player ;
+            onto:name  ?playerName ;
+            owl:sameAs ?wikidataURI .
+    FILTER(STRSTARTS(STR(?wikidataURI), "http://www.wikidata.org/entity/"))
+}
+ORDER BY ?playerName
+LIMIT 15
+
+
+#@name: players_by_country
+#@requires: links
+#@desc: Number of players per country, with the country's Wikidata URI
+SELECT ?country ?wikidataCountry (COUNT(?player) AS ?players)
+WHERE {
+    ?player a onto:Player ;
+            onto:hasNationality ?nat .
+    ?nat onto:nationalityCountry ?wikidataCountry .
+    FILTER(STRSTARTS(STR(?wikidataCountry), "http://www.wikidata.org/entity/"))
+    ?wikidataCountry rdfs:label ?country .
+}
+GROUP BY ?country ?wikidataCountry
+ORDER BY DESC(?players) ?country
+
+
+#@name: matches_per_club
+#@desc: Number of home and away matches per Premier League club
+SELECT ?clubName
+       (COUNT(DISTINCT ?homeMatch) AS ?homeMatches)
+       (COUNT(DISTINCT ?awayMatch) AS ?awayMatches)
+WHERE {
+    ?club a onto:FootballClub ;
+          onto:name           ?clubName ;
+          onto:participatesIn league:premier_league .
+    OPTIONAL { ?homeMatch onto:homeTeam ?club }
+    OPTIONAL { ?awayMatch onto:awayTeam ?club }
+}
+GROUP BY ?clubName
+ORDER BY ?clubName
+
+
+#@name: goals_per_match
+#@desc: Matches ordered by total number of goals
+SELECT ?homeClub ?awayClub ?matchDate ?homeScore ?awayScore ?totalGoals
+WHERE {
+    ?match a onto:Match ;
+           onto:homeTeam  ?home ;
+           onto:awayTeam  ?away ;
+           onto:homeScore ?homeScore ;
+           onto:awayScore ?awayScore ;
+           onto:matchDate ?matchDate .
+    ?home onto:shortName ?homeClub .
+    ?away onto:shortName ?awayClub .
+    BIND((?homeScore + ?awayScore) AS ?totalGoals)
+}
+ORDER BY DESC(?totalGoals) ?matchDate
+
+
+#@name: managers
+#@desc: Managers with their club and nationality
+SELECT ?managerName ?clubName ?nationality
+WHERE {
+    ?manager a onto:Manager ;
+             onto:name           ?managerName ;
+             onto:hasNationality ?nat .
+    ?nat  onto:name ?nationality .
+    ?club a onto:FootballClub ;
+          onto:name      ?clubName ;
+          onto:managedBy ?manager .
+}
+ORDER BY ?managerName
+
+
+#@name: arsenal_goals_detail
+#@desc: Every goal scored for Arsenal with match, minute and penalty flag
+SELECT ?playerName ?homeClub ?awayClub ?minute ?isPenalty ?matchDate
+WHERE {
+    ?goal a onto:Goal ;
+          onto:scoredBy      ?player ;
+          onto:scoredForTeam club:arsenal ;
+          onto:scoredInMatch ?match ;
+          onto:goalMinute    ?minute ;
+          onto:isPenalty     ?isPenalty .
+    ?player onto:name      ?playerName .
+    ?match  onto:homeTeam  ?home ;
+            onto:awayTeam  ?away ;
+            onto:matchDate ?matchDate .
+    ?home onto:shortName ?homeClub .
+    ?away onto:shortName ?awayClub .
+}
+ORDER BY ?matchDate ?minute
+
+
+#@name: tall_players
+#@desc: Players taller than 190 cm
+SELECT ?name ?height ?position ?club
+WHERE {
+    ?player a onto:Player ;
+            onto:name     ?name ;
+            onto:height   ?height ;
+            onto:playsFor ?c .
+    ?c onto:shortName ?club .
+    OPTIONAL { ?player onto:hasPosition ?pos .
+               ?pos    onto:shortName   ?position }
+    FILTER (?height > 190)
+}
+ORDER BY DESC(?height)
+
+
+#@name: added_time_goals
+#@desc: Goals scored in stoppage time (e.g. 90+6), with scorer and match
+SELECT ?minute ?addedTime ?scorer ?forClub ?homeClub ?awayClub ?ownGoal
+WHERE {
+    ?goal a onto:Goal ;
+          onto:goalMinute    ?minute ;
+          onto:addedTime     ?addedTime ;
+          onto:scoredBy      ?p ;
+          onto:scoredForTeam ?c ;
+          onto:isOwnGoal     ?ownGoal ;
+          onto:scoredInMatch ?m .
+    ?p onto:name ?scorer .
+    ?c onto:shortName ?forClub .
+    ?m onto:homeTeam/onto:shortName ?homeClub ;
+       onto:awayTeam/onto:shortName ?awayClub .
+}
+ORDER BY ?minute ?addedTime
+
+
+#@name: ask_villa_beat_city
+#@desc: ASK — did Aston Villa beat Man City at home?
+ASK {
+    ?match a onto:Match ;
+           onto:homeTeam club:aston_villa ;
+           onto:awayTeam club:man_city ;
+           onto:wonBy    club:aston_villa .
+}
+
+
+#@name: construct_scored_goals
+#@desc: CONSTRUCT — a compact "player scored goal in match" sub-graph
+CONSTRUCT {
+    ?player onto:scoredGoal ?goal .
+    ?goal   onto:inMatch    ?match ;
+            onto:atMinute   ?minute .
+}
+WHERE {
+    ?goal a onto:Goal ;
+          onto:scoredBy      ?player ;
+          onto:scoredInMatch ?match ;
+          onto:goalMinute    ?minute .
+}
+LIMIT 20
+
+
+#@name: describe_haaland
+#@desc: DESCRIBE — every triple about Erling Haaland
+DESCRIBE player:erling_haaland
+
+
+#@name: count_types
+#@desc: Number of entities per ontology class
+SELECT ?type (COUNT(?entity) AS ?count)
+WHERE {
+    ?entity a ?type .
+    FILTER(STRSTARTS(STR(?type), "http://semantic-football.org/ontology#"))
+}
+GROUP BY ?type
+ORDER BY DESC(?count)
+
+
+#@name: linksets
+#@requires: links
+#@desc: Number of outgoing links per external dataset (5-star statistics)
+SELECT ?targetDataset ?predicate (COUNT(*) AS ?links)
+WHERE {
+    ?s ?predicate ?o .
+    FILTER(STRSTARTS(STR(?s), "http://semantic-football.org/data/"))
+    FILTER(?predicate IN (owl:sameAs, onto:nationalityCountry))
+    BIND(IF(STRSTARTS(STR(?o), "http://dbpedia.org/"),        "DBpedia",
+         IF(STRSTARTS(STR(?o), "http://www.wikidata.org/"),   "Wikidata",
+         IF(STRSTARTS(STR(?o), "http://sws.geonames.org/"),   "GeoNames", "other"))) AS ?targetDataset)
+}
+GROUP BY ?targetDataset ?predicate
+ORDER BY DESC(?links)
+
+
+#@name: federated_dbpedia_abstract
+#@desc: FEDERATED — follow owl:sameAs into the live DBpedia endpoint to get Arsenal players' abstracts
+#@requires: links, network
+SELECT ?name ?dbpedia ?abstract
+WHERE {
+    ?player a onto:Player ;
+            onto:name     ?name ;
+            onto:playsFor club:arsenal ;
+            owl:sameAs    ?dbpedia .
+    FILTER(STRSTARTS(STR(?dbpedia), "http://dbpedia.org/resource/"))
+    SERVICE <https://dbpedia.org/sparql> {
+        ?dbpedia dbo:abstract ?abstract .
+        FILTER(LANG(?abstract) = "en")
+    }
+}

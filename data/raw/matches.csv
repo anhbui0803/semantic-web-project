@@ -1,0 +1,16 @@
+match_id,home_team,away_team,match_date,match_week,home_score,away_score,league_id,season_id
+m001,arsenal,man_city,2023-10-08,8,1,0,premier_league,pl_2023_24
+m002,tottenham,liverpool,2023-09-30,7,2,1,premier_league,pl_2023_24
+m003,man_city,liverpool,2023-11-25,13,1,1,premier_league,pl_2023_24
+m004,chelsea,arsenal,2023-10-21,9,2,2,premier_league,pl_2023_24
+m005,tottenham,aston_villa,2023-11-26,13,1,2,premier_league,pl_2023_24
+m006,man_city,tottenham,2023-12-03,14,3,3,premier_league,pl_2023_24
+m007,aston_villa,man_city,2023-12-06,15,1,0,premier_league,pl_2023_24
+m008,aston_villa,arsenal,2023-12-09,16,1,0,premier_league,pl_2023_24
+m009,liverpool,aston_villa,2023-09-03,4,3,0,premier_league,pl_2023_24
+m010,liverpool,chelsea,2024-01-31,22,4,1,premier_league,pl_2023_24
+m011,arsenal,liverpool,2024-02-04,23,3,1,premier_league,pl_2023_24
+m012,man_city,chelsea,2024-02-17,25,1,1,premier_league,pl_2023_24
+m013,arsenal,tottenham,2023-09-24,6,2,2,premier_league,pl_2023_24
+m014,chelsea,aston_villa,2023-09-24,6,0,1,premier_league,pl_2023_24
+m015,tottenham,chelsea,2023-11-06,11,1,4,premier_league,pl_2023_24

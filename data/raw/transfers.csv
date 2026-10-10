@@ -1,0 +1,11 @@
+transfer_id,player_id,from_club,to_club,transfer_date,fee_million_gbp,season_id
+t001,declan_rice,west_ham,arsenal,2023-07-15,100.0,pl_2023_24
+t002,cole_palmer,man_city,chelsea,2023-09-01,40.0,pl_2023_24
+t003,dominik_szoboszlai,rb_leipzig,liverpool,2023-07-02,60.0,pl_2023_24
+t004,christopher_nkunku,rb_leipzig,chelsea,2023-07-01,52.0,pl_2023_24
+t005,pau_torres,villarreal,aston_villa,2023-07-12,31.5,pl_2023_24
+t006,nicolas_jackson,villarreal,chelsea,2023-06-30,32.0,pl_2023_24
+t007,mykhailo_mudryk,shakhtar_donetsk,chelsea,2023-01-15,62.0,pl_2022_23
+t008,cody_gakpo,psv,liverpool,2023-01-01,,pl_2022_23
+t009,erling_haaland,borussia_dortmund,man_city,2022-07-01,51.2,pl_2022_23
+t010,ollie_watkins,brentford,aston_villa,2020-09-09,28.0,pl_2020_21

@@ -1,0 +1,24 @@
+nationality_id,label,country_name,country_wikidata_id,country_dbpedia_uri
+english,English,England,Q21,http://dbpedia.org/resource/England
+scottish,Scottish,Scotland,Q22,http://dbpedia.org/resource/Scotland
+northern_irish,Northern Irish,Northern Ireland,Q26,http://dbpedia.org/resource/Northern_Ireland
+brazilian,Brazilian,Brazil,Q155,http://dbpedia.org/resource/Brazil
+belgian,Belgian,Belgium,Q31,http://dbpedia.org/resource/Belgium
+norwegian,Norwegian,Norway,Q20,http://dbpedia.org/resource/Norway
+spanish,Spanish,Spain,Q29,http://dbpedia.org/resource/Spain
+hungarian,Hungarian,Hungary,Q28,http://dbpedia.org/resource/Hungary
+egyptian,Egyptian,Egypt,Q79,http://dbpedia.org/resource/Egypt
+dutch,Dutch,Netherlands,Q55,http://dbpedia.org/resource/Netherlands
+portuguese,Portuguese,Portugal,Q45,http://dbpedia.org/resource/Portugal
+colombian,Colombian,Colombia,Q739,http://dbpedia.org/resource/Colombia
+cameroonian,Cameroonian,Cameroon,Q1009,http://dbpedia.org/resource/Cameroon
+jamaican,Jamaican,Jamaica,Q766,http://dbpedia.org/resource/Jamaica
+polish,Polish,Poland,Q36,http://dbpedia.org/resource/Poland
+south_korean,South Korean,South Korea,Q884,http://dbpedia.org/resource/South_Korea
+argentine,Argentine,Argentina,Q414,http://dbpedia.org/resource/Argentina
+swedish,Swedish,Sweden,Q34,http://dbpedia.org/resource/Sweden
+ukrainian,Ukrainian,Ukraine,Q212,http://dbpedia.org/resource/Ukraine
+french,French,France,Q142,http://dbpedia.org/resource/France
+senegalese,Senegalese,Senegal,Q1041,http://dbpedia.org/resource/Senegal
+german,German,Germany,Q183,http://dbpedia.org/resource/Germany
+australian,Australian,Australia,Q408,http://dbpedia.org/resource/Australia

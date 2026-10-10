@@ -1,0 +1,1347 @@
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/nationality/ukrainian> <http://www.w3.org/2000/01/rdf-schema#label> "Ukrainian"@en .
+<http://semantic-football.org/data/player/mohamed_salah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#name> "Premier League" .
+<http://semantic-football.org/data/goal/g041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/villa_park> .
+<http://semantic-football.org/data/goal/g033> <http://purl.org/dc/elements/1.1/identifier> "g033" .
+<http://semantic-football.org/data/goal/g011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/nationality/dutch> <http://semantic-football.org/ontology#name> "Dutch" .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#addedTime> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/player/matty_cash> <http://purl.org/dc/elements/1.1/identifier> "matty_cash" .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://purl.org/dc/elements/1.1/identifier> "jurgen_klopp" .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#dateOfBirth> "1992-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/city/villarreal> <http://semantic-football.org/ontology#country> "Spain" .
+<http://semantic-football.org/data/goal/g034> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g034 (42')"@en .
+<http://semantic-football.org/data/match/m005> <http://www.w3.org/2000/01/rdf-schema#label> "Spurs 1-2 Aston Villa (2023-11-26)"@en .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g038> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g038 (54')"@en .
+<http://semantic-football.org/data/match/m014> <http://www.w3.org/2000/01/rdf-schema#label> "Chelsea 0-1 Aston Villa (2023-09-24)"@en .
+<http://semantic-football.org/data/nationality/northern_irish> <http://www.w3.org/2000/01/rdf-schema#label> "Northern Irish"@en .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#goalMinute> "31"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/nationality/belgian> <http://semantic-football.org/ontology#name> "Belgian" .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#matchWeek> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/city/donetsk> <http://www.w3.org/2000/01/rdf-schema#label> "Donetsk"@en .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m004> .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/cameroonian> .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/bukayo_saka> .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/dominik_szoboszlai> .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/nationality/portuguese> <http://www.w3.org/2000/01/rdf-schema#label> "Portuguese"@en .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/nicolas_jackson> .
+<http://semantic-football.org/data/player/conor_bradley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/jack_grealish> <http://purl.org/dc/elements/1.1/identifier> "jack_grealish" .
+<http://semantic-football.org/data/season/pl_2021_22> <http://purl.org/dc/elements/1.1/identifier> "pl_2021_22" .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/colombian> .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#isPenalty> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://purl.org/dc/elements/1.1/identifier> "borussia_dortmund" .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#isOwnGoal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#transferDate> "2023-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m013> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://purl.org/dc/elements/1.1/identifier> "trent_alexander_arnold" .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/club/villarreal> <http://www.w3.org/2000/01/rdf-schema#label> "Villarreal CF"@en .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/egyptian> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#homeScore> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m015> .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t001> <http://purl.org/dc/elements/1.1/identifier> "t001" .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/unai_emery> .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#opened> "1877"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://xmlns.com/foaf/0.1/name> "Ollie Watkins" .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#dateOfBirth> "1997-11-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#height> "178"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/leon_bailey> <http://www.w3.org/2000/01/rdf-schema#label> "Leon Bailey" .
+<http://semantic-football.org/data/transfer/t007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m002> .
+<http://semantic-football.org/data/goal/g032> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g032 (67')"@en .
+<http://semantic-football.org/data/player/mohamed_salah> <http://www.w3.org/2000/01/rdf-schema#label> "Mohamed Salah" .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#name> "Ollie Watkins" .
+<http://semantic-football.org/data/goal/g037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://www.w3.org/2000/01/rdf-schema#label> "Gabriel Magalhães" .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#goalMinute> "22"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g040> <http://purl.org/dc/elements/1.1/identifier> "g040" .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#opened> "2019"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t007> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of mykhailo_mudryk: shakhtar_donetsk → chelsea"@en .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/nationality/portuguese> <http://semantic-football.org/ontology#name> "Portuguese" .
+<http://semantic-football.org/data/goal/g016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#name> "Leandro Trossard" .
+<http://semantic-football.org/data/player/rodri> <http://xmlns.com/foaf/0.1/name> "Rodri" .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/cristian_romero> <http://www.w3.org/2000/01/rdf-schema#label> "Cristian Romero" .
+<http://semantic-football.org/data/season/pl_2021_22> <http://semantic-football.org/ontology#seasonLabel> "2021-22" .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://semantic-football.org/ontology#dateOfBirth> "1982-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/club/man_city> <http://purl.org/dc/elements/1.1/identifier> "man_city" .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://www.w3.org/2000/01/rdf-schema#label> "Dominik Szoboszlai" .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#goalMinute> "81"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://semantic-football.org/ontology#city> "Dortmund" .
+<http://semantic-football.org/data/goal/g034> <http://purl.org/dc/elements/1.1/identifier> "g034" .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://www.w3.org/2000/01/rdf-schema#label> "Borussia Dortmund"@en .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#homeScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g041> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g041 (6')"@en .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://semantic-football.org/ontology#name> "Borussia Dortmund" .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/bukayo_saka> .
+<http://semantic-football.org/data/match/m013> <http://www.w3.org/2000/01/rdf-schema#label> "Arsenal 2-2 Spurs (2023-09-24)"@en .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/anfield> .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#height> "186"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://www.w3.org/2000/01/rdf-schema#label> "Trent Alexander-Arnold" .
+<http://semantic-football.org/data/goal/g001> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g001 (86')"@en .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#dateOfBirth> "1996-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#matchDate> "2023-12-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/season/pl_2023_24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Season> .
+<http://semantic-football.org/data/season/pl_2020_21> <http://purl.org/dc/elements/1.1/identifier> "pl_2020_21" .
+<http://semantic-football.org/data/player/erling_haaland> <http://xmlns.com/foaf/0.1/name> "Erling Haaland" .
+<http://semantic-football.org/data/season/pl_2021_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Season> .
+<http://semantic-football.org/data/club/villarreal> <http://semantic-football.org/ontology#shortName> "Villarreal" .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/donetsk> .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#founded> "1992"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/transfer/t002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m007> .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/rb_leipzig> .
+<http://semantic-football.org/data/nationality/colombian> <http://semantic-football.org/ontology#name> "Colombian" .
+<http://semantic-football.org/data/transfer/t001> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of declan_rice: west_ham → arsenal"@en .
+<http://semantic-football.org/data/manager/unai_emery> <http://semantic-football.org/ontology#dateOfBirth> "1971-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://www.w3.org/2000/01/rdf-schema#label> "Tottenham Hotspur Stadium"@en .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://purl.org/dc/elements/1.1/identifier> "dejan_kulusevski" .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#transferDate> "2020-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#height> "185"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#addedTime> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#goalMinute> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://purl.org/dc/elements/1.1/identifier> "mikel_arteta" .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#transferFee> "51.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g008> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g008 (48')"@en .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/northern_irish> .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/club/tottenham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#dateOfBirth> "2001-06-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/transfer/t006> <http://purl.org/dc/elements/1.1/identifier> "t006" .
+<http://semantic-football.org/data/club/rb_leipzig> <http://semantic-football.org/ontology#city> "Leipzig" .
+<http://semantic-football.org/data/city/leipzig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/goal/g022> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g022 (3')"@en .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/giovani_lo_celso> .
+<http://semantic-football.org/data/season/pl_2023_24> <http://www.w3.org/2000/01/rdf-schema#label> "Premier League 2023-24"@en .
+<http://semantic-football.org/data/stadium/emirates> <http://purl.org/dc/elements/1.1/identifier> "emirates" .
+<http://semantic-football.org/data/club/brentford> <http://www.w3.org/2000/01/rdf-schema#label> "Brentford FC"@en .
+<http://semantic-football.org/data/goal/g027> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g027 (65')"@en .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/luis_diaz> <http://xmlns.com/foaf/0.1/name> "Luis Díaz" .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#dateOfBirth> "1998-04-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/dejan_kulusevski> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#addedTime> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/nationality/norwegian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#height> "171"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/match/m010> <http://www.w3.org/2000/01/rdf-schema#label> "Liverpool 4-1 Chelsea (2024-01-31)"@en .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://semantic-football.org/ontology#country> "Ukraine" .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#matchDate> "2023-09-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g040> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g040 (73')"@en .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#name> "Chelsea FC" .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#goalMinute> "45"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#name> "Aston Villa FC" .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#goalMinute> "67"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#name> "Luis Díaz" .
+<http://semantic-football.org/data/nationality/scottish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#name> "Nicolas Jackson" .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/dejan_kulusevski> .
+<http://semantic-football.org/data/city/liverpool> <http://semantic-football.org/ontology#name> "Liverpool" .
+<http://semantic-football.org/data/match/m003> <http://purl.org/dc/elements/1.1/identifier> "m003" .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/transfer/t003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/transfer/t001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/match/m011> <http://purl.org/dc/elements/1.1/identifier> "m011" .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#dateOfBirth> "1997-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#height> "183"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#height> "180"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://www.w3.org/2000/01/rdf-schema#label> "Bukayo Saka" .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#name> "Gabriel Martinelli" .
+<http://semantic-football.org/data/player/phil_foden> <http://xmlns.com/foaf/0.1/name> "Phil Foden" .
+<http://semantic-football.org/data/player/pau_torres> <http://www.w3.org/2000/01/rdf-schema#label> "Pau Torres" .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/argentine> .
+<http://semantic-football.org/data/manager/unai_emery> <http://www.w3.org/2000/01/rdf-schema#label> "Unai Emery" .
+<http://semantic-football.org/data/goal/g012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/manager/unai_emery> <http://purl.org/dc/elements/1.1/identifier> "unai_emery" .
+<http://semantic-football.org/data/match/m012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/club/brentford> <http://purl.org/dc/elements/1.1/identifier> "brentford" .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m013> .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/nationality/belgian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#transferDate> "2023-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#height> "175"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/german> .
+<http://semantic-football.org/data/transfer/t010> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of ollie_watkins: brentford → aston_villa"@en .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/season/pl_2023_24> <http://semantic-football.org/ontology#seasonLabel> "2023-24" .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#matchWeek> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#matchWeek> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#opened> "1884"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#name> "Tottenham Hotspur Stadium" .
+<http://semantic-football.org/data/nationality/french> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#name> "Phil Foden" .
+<http://semantic-football.org/data/club/villarreal> <http://semantic-football.org/ontology#country> "Spain" .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://purl.org/dc/elements/1.1/identifier> "gabriel_magalhaes" .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#transferFee> "40.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/stadium/etihad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#homeScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/etihad> <http://purl.org/dc/elements/1.1/identifier> "etihad" .
+<http://semantic-football.org/data/goal/g022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/hungarian> .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/argentine> .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#goalMinute> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/tottenham> <http://www.w3.org/2000/01/rdf-schema#label> "Tottenham Hotspur FC"@en .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://semantic-football.org/ontology#city> "Donetsk" .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/match/m009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/city/manchester> <http://www.w3.org/2000/01/rdf-schema#label> "Manchester"@en .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/goal/g014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/nationality/portuguese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#isOwnGoal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/nationality/egyptian> <http://www.w3.org/2000/01/rdf-schema#label> "Egyptian"@en .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#dateOfBirth> "1999-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#name> "Tottenham Hotspur FC" .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#dateOfBirth> "1994-12-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#goalMinute> "65"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/city/birmingham> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/match/m005> <http://purl.org/dc/elements/1.1/identifier> "m005" .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#goalMinute> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/arsenal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/goal/g016> <http://purl.org/dc/elements/1.1/identifier> "g016" .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/nationality/german> <http://semantic-football.org/ontology#name> "German" .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/nationality/swedish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#transferDate> "2023-07-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/matty_cash> .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#hasSeason> <http://semantic-football.org/data/season/pl_2020_21> .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#homeScore> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#goalMinute> "45"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/erling_haaland> .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/leandro_trossard> .
+<http://semantic-football.org/data/goal/g028> <http://purl.org/dc/elements/1.1/identifier> "g028" .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#goalMinute> "54"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://purl.org/dc/elements/1.1/identifier> "giovani_lo_celso" .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#homeScore> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m006> <http://purl.org/dc/elements/1.1/identifier> "m006" .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#dateOfBirth> "2003-07-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/match/m002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/nationality/english> <http://semantic-football.org/ontology#name> "English" .
+<http://semantic-football.org/data/player/son_heung_min> <http://xmlns.com/foaf/0.1/name> "Son Heung-min" .
+<http://semantic-football.org/data/goal/g024> <http://purl.org/dc/elements/1.1/identifier> "g024" .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#isOwnGoal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://www.w3.org/2000/01/rdf-schema#label> "Stamford Bridge"@en .
+<http://semantic-football.org/data/player/cole_palmer> <http://www.w3.org/2000/01/rdf-schema#label> "Cole Palmer" .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#matchWeek> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/city/villarreal> <http://www.w3.org/2000/01/rdf-schema#label> "Villarreal"@en .
+<http://semantic-football.org/data/goal/g034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g024> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g024 (55')"@en .
+<http://semantic-football.org/data/goal/g026> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g026 (39')"@en .
+<http://semantic-football.org/data/goal/g009> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g009 (77')"@en .
+<http://semantic-football.org/data/nationality/dutch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/nationality/south_korean> <http://semantic-football.org/ontology#name> "South Korean" .
+<http://semantic-football.org/data/goal/g032> <http://purl.org/dc/elements/1.1/identifier> "g032" .
+<http://semantic-football.org/data/player/cody_gakpo> <http://purl.org/dc/elements/1.1/identifier> "cody_gakpo" .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#dateOfBirth> "1998-10-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g023> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g023 (22')"@en .
+<http://semantic-football.org/data/transfer/t007> <http://purl.org/dc/elements/1.1/identifier> "t007" .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/villarreal> .
+<http://semantic-football.org/data/goal/g002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/nationality/colombian> <http://www.w3.org/2000/01/rdf-schema#label> "Colombian"@en .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m009> .
+<http://semantic-football.org/data/player/jack_grealish> <http://xmlns.com/foaf/0.1/name> "Jack Grealish" .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/swedish> .
+<http://semantic-football.org/data/goal/g013> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g013 (61')"@en .
+<http://semantic-football.org/data/player/leon_bailey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g018> <http://purl.org/dc/elements/1.1/identifier> "g018" .
+<http://semantic-football.org/data/nationality/english> <http://www.w3.org/2000/01/rdf-schema#label> "English"@en .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/league/premier_league> <http://purl.org/dc/elements/1.1/identifier> "premier_league" .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/city/liverpool> <http://www.w3.org/2000/01/rdf-schema#label> "Liverpool"@en .
+<http://semantic-football.org/data/nationality/brazilian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m006> <http://www.w3.org/2000/01/rdf-schema#label> "Man City 3-3 Spurs (2023-12-03)"@en .
+<http://semantic-football.org/data/nationality/belgian> <http://www.w3.org/2000/01/rdf-schema#label> "Belgian"@en .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#matchWeek> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://xmlns.com/foaf/0.1/name> "Cody Gakpo" .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/cristian_romero> .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/west_ham> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#matchDate> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m002> <http://www.w3.org/2000/01/rdf-schema#label> "Spurs 2-1 Liverpool (2023-09-30)"@en .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#matchWeek> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/nationality/egyptian> <http://semantic-football.org/ontology#name> "Egyptian" .
+<http://semantic-football.org/data/goal/g023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/club/brentford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#matchDate> "2023-12-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/season/pl_2020_21> <http://www.w3.org/2000/01/rdf-schema#label> "Premier League 2020-21"@en .
+<http://semantic-football.org/data/nationality/northern_irish> <http://semantic-football.org/ontology#name> "Northern Irish" .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/joel_matip> <http://xmlns.com/foaf/0.1/name> "Joël Matip" .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/leandro_trossard> .
+<http://semantic-football.org/data/nationality/senegalese> <http://www.w3.org/2000/01/rdf-schema#label> "Senegalese"@en .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://purl.org/dc/elements/1.1/identifier> "ange_postecoglou" .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/club/west_ham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://xmlns.com/foaf/0.1/name> "Dejan Kulusevski" .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#dateOfBirth> "2000-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/phil_foden> <http://purl.org/dc/elements/1.1/identifier> "phil_foden" .
+<http://semantic-football.org/data/match/m012> <http://www.w3.org/2000/01/rdf-schema#label> "Man City 1-1 Chelsea (2024-02-17)"@en .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#matchWeek> "22"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/mykhailo_mudryk> .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/jack_grealish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g039> <http://purl.org/dc/elements/1.1/identifier> "g039" .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://xmlns.com/foaf/0.1/name> "Giovani Lo Celso" .
+<http://semantic-football.org/data/player/leandro_trossard> <http://www.w3.org/2000/01/rdf-schema#label> "Leandro Trossard" .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#name> "Dejan Kulusevski" .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#hasSeason> <http://semantic-football.org/data/season/pl_2022_23> .
+<http://semantic-football.org/data/club/liverpool> <http://www.w3.org/2000/01/rdf-schema#label> "Liverpool FC"@en .
+<http://semantic-football.org/data/goal/g045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/match/m004> <http://purl.org/dc/elements/1.1/identifier> "m004" .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m001> .
+<http://semantic-football.org/data/club/arsenal> <http://purl.org/dc/elements/1.1/identifier> "arsenal" .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#awayScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g037> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g037 (42')"@en .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#height> "185"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#opened> "1897"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#dateOfBirth> "2001-09-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://purl.org/dc/elements/1.1/identifier> "mauricio_pochettino" .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m003> .
+<http://semantic-football.org/data/match/m004> <http://www.w3.org/2000/01/rdf-schema#label> "Chelsea 2-2 Arsenal (2023-10-21)"@en .
+<http://semantic-football.org/data/match/m011> <http://www.w3.org/2000/01/rdf-schema#label> "Arsenal 3-1 Liverpool (2024-02-04)"@en .
+<http://semantic-football.org/data/city/birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#goalMinute> "39"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#founded> "1874"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://purl.org/dc/elements/1.1/identifier> "christopher_nkunku" .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#transferFee> "52.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/player/diogo_jota> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/match/m003> <http://www.w3.org/2000/01/rdf-schema#label> "Man City 1-1 Liverpool (2023-11-25)"@en .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/belgian> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/jamaican> .
+<http://semantic-football.org/data/club/psv> <http://semantic-football.org/ontology#country> "Netherlands" .
+<http://semantic-football.org/data/goal/g042> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g042 (35')"@en .
+<http://semantic-football.org/data/club/aston_villa> <http://purl.org/dc/elements/1.1/identifier> "aston_villa" .
+<http://semantic-football.org/data/match/m008> <http://www.w3.org/2000/01/rdf-schema#label> "Aston Villa 1-0 Arsenal (2023-12-09)"@en .
+<http://semantic-football.org/data/nationality/brazilian> <http://semantic-football.org/ontology#name> "Brazilian" .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g005> <http://purl.org/dc/elements/1.1/identifier> "g005" .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/player/luis_diaz> <http://www.w3.org/2000/01/rdf-schema#label> "Luis Díaz" .
+<http://semantic-football.org/data/goal/g010> <http://purl.org/dc/elements/1.1/identifier> "g010" .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#goalMinute> "22"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#name> "Erling Haaland" .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://www.w3.org/2000/01/rdf-schema#label> "Nicolas Jackson" .
+<http://semantic-football.org/data/match/m013> <http://purl.org/dc/elements/1.1/identifier> "m013" .
+<http://semantic-football.org/data/city/liverpool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/stadium/villa_park> <http://purl.org/dc/elements/1.1/identifier> "villa_park" .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://purl.org/dc/elements/1.1/identifier> "shakhtar_donetsk" .
+<http://semantic-football.org/data/player/declan_rice> <http://xmlns.com/foaf/0.1/name> "Declan Rice" .
+<http://semantic-football.org/data/club/brentford> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/son_heung_min> .
+<http://semantic-football.org/data/goal/g020> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g020 (74')"@en .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/declan_rice> .
+<http://semantic-football.org/data/league/premier_league> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#League> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#matchDate> "2023-11-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#city> "Manchester" .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#name> "Liverpool FC" .
+<http://semantic-football.org/data/season/pl_2020_21> <http://semantic-football.org/ontology#name> "Premier League 2020-21" .
+<http://semantic-football.org/data/goal/g019> <http://purl.org/dc/elements/1.1/identifier> "g019" .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/ange_postecoglou> .
+<http://semantic-football.org/data/club/west_ham> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://www.w3.org/2000/01/rdf-schema#label> "Pep Guardiola" .
+<http://semantic-football.org/data/goal/g003> <http://purl.org/dc/elements/1.1/identifier> "g003" .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#name> "Declan Rice" .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#awayScore> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/player/luis_diaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g002> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g002 (36')"@en .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#awayScore> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#height> "172"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#dateOfBirth> "1997-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#goalMinute> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m002> <http://purl.org/dc/elements/1.1/identifier> "m002" .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#goalMinute> "79"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#goalMinute> "42"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/city/donetsk> <http://semantic-football.org/ontology#country> "Ukraine" .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#founded> "1892"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g017> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g017 (69')"@en .
+<http://semantic-football.org/data/goal/g027> <http://purl.org/dc/elements/1.1/identifier> "g027" .
+<http://semantic-football.org/data/goal/g014> <http://purl.org/dc/elements/1.1/identifier> "g014" .
+<http://semantic-football.org/data/manager/unai_emery> <http://semantic-football.org/ontology#name> "Unai Emery" .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2022_23> .
+<http://semantic-football.org/data/city/eindhoven> <http://www.w3.org/2000/01/rdf-schema#label> "Eindhoven"@en .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/argentine> .
+<http://semantic-football.org/data/transfer/t008> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/psv> .
+<http://semantic-football.org/data/club/west_ham> <http://semantic-football.org/ontology#shortName> "West Ham" .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m004> .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#dateOfBirth> "1999-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/nationality/scottish> <http://www.w3.org/2000/01/rdf-schema#label> "Scottish"@en .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://semantic-football.org/ontology#name> "FC Shakhtar Donetsk" .
+<http://semantic-football.org/data/nationality/cameroonian> <http://semantic-football.org/ontology#name> "Cameroonian" .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/brazilian> .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#goalMinute> "45"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/player/conor_bradley> <http://xmlns.com/foaf/0.1/name> "Conor Bradley" .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m015> .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#transferFee> "60.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#dateOfBirth> "1996-12-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#goalMinute> "71"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m011> .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://xmlns.com/foaf/0.1/name> "Gabriel Magalhães" .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#hasSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/liverpool> .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#name> "Conor Bradley" .
+<http://semantic-football.org/data/transfer/t004> <http://purl.org/dc/elements/1.1/identifier> "t004" .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/player/phil_foden> <http://www.w3.org/2000/01/rdf-schema#label> "Phil Foden" .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/nationality/spanish> <http://semantic-football.org/ontology#name> "Spanish" .
+<http://semantic-football.org/data/player/cristian_romero> <http://xmlns.com/foaf/0.1/name> "Cristian Romero" .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#capacity> "61038"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/city/eindhoven> <http://semantic-football.org/ontology#name> "Eindhoven" .
+<http://semantic-football.org/data/goal/g025> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g025 (23')"@en .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://xmlns.com/foaf/0.1/name> "Dominik Szoboszlai" .
+<http://semantic-football.org/data/transfer/t008> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2022_23> .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://purl.org/dc/elements/1.1/identifier> "pep_guardiola" .
+<http://semantic-football.org/data/player/rodri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/match/m008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#goalMinute> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g029> <http://purl.org/dc/elements/1.1/identifier> "g029" .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#goalMinute> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#capacity> "60704"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#height> "186"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#dateOfBirth> "1997-01-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#transferFee> "31.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/christopher_nkunku> .
+<http://semantic-football.org/data/nationality/norwegian> <http://www.w3.org/2000/01/rdf-schema#label> "Norwegian"@en .
+<http://semantic-football.org/data/player/cole_palmer> <http://xmlns.com/foaf/0.1/name> "Cole Palmer" .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#transferFee> "100.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m010> .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#height> "180"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#dateOfBirth> "1992-07-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#capacity> "43205"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m012> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m002> .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#opened> "2006"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/player/son_heung_min> <http://www.w3.org/2000/01/rdf-schema#label> "Son Heung-min" .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/club/psv> <http://semantic-football.org/ontology#shortName> "PSV" .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#name> "Cole Palmer" .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#isOwnGoal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/match/m014> <http://purl.org/dc/elements/1.1/identifier> "m014" .
+<http://semantic-football.org/data/goal/g010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/transfer/t008> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of cody_gakpo: psv → liverpool"@en .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/jack_grealish> <http://www.w3.org/2000/01/rdf-schema#label> "Jack Grealish" .
+<http://semantic-football.org/data/match/m011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/spanish> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/etihad> .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#transferDate> "2023-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#city> "Manchester" .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/senegalese> .
+<http://semantic-football.org/data/club/villarreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#goalMinute> "86"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/season/pl_2023_24> <http://purl.org/dc/elements/1.1/identifier> "pl_2023_24" .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/ukrainian> .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m002> .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://www.w3.org/2000/01/rdf-schema#label> "Ollie Watkins" .
+<http://semantic-football.org/data/goal/g035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/club/chelsea> <http://www.w3.org/2000/01/rdf-schema#label> "Chelsea FC"@en .
+<http://semantic-football.org/data/goal/g020> <http://purl.org/dc/elements/1.1/identifier> "g020" .
+<http://semantic-football.org/data/goal/g016> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g016 (31')"@en .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/club/man_city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/club/west_ham> <http://www.w3.org/2000/01/rdf-schema#label> "West Ham United FC"@en .
+<http://semantic-football.org/data/club/arsenal> <http://www.w3.org/2000/01/rdf-schema#label> "Arsenal FC"@en .
+<http://semantic-football.org/data/player/john_mcginn> <http://purl.org/dc/elements/1.1/identifier> "john_mcginn" .
+<http://semantic-football.org/data/goal/g003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#matchDate> "2024-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://semantic-football.org/ontology#name> "Jürgen Klopp" .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://purl.org/dc/elements/1.1/identifier> "mykhailo_mudryk" .
+<http://semantic-football.org/data/match/m004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/nationality/argentine> <http://semantic-football.org/ontology#name> "Argentine" .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#transferFee> "32.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/nationality/hungarian> <http://semantic-football.org/ontology#name> "Hungarian" .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://purl.org/dc/elements/1.1/identifier> "tottenham_stadium" .
+<http://semantic-football.org/data/goal/g026> <http://purl.org/dc/elements/1.1/identifier> "g026" .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/city/manchester> <http://semantic-football.org/ontology#name> "Manchester" .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#dateOfBirth> "2001-06-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://xmlns.com/foaf/0.1/name> "Bukayo Saka" .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/player/phil_foden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#height> "172"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#goalMinute> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/rb_leipzig> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m010> .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#goalMinute> "80"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/nationality/swedish> <http://www.w3.org/2000/01/rdf-schema#label> "Swedish"@en .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#name> "Manchester City FC" .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#matchDate> "2023-12-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/diogo_jota> .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#name> "Bukayo Saka" .
+<http://semantic-football.org/data/nationality/english> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#addedTime> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#dateOfBirth> "1995-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#name> "Rodri" .
+<http://semantic-football.org/data/club/rb_leipzig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#shortName> "Chelsea" .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/john_mcginn> <http://www.w3.org/2000/01/rdf-schema#label> "John McGinn" .
+<http://semantic-football.org/data/goal/g017> <http://purl.org/dc/elements/1.1/identifier> "g017" .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/city/eindhoven> <http://semantic-football.org/ontology#country> "Netherlands" .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/dominik_szoboszlai> .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#height> "180"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/portuguese> .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m004> .
+<http://semantic-football.org/data/match/m003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/transfer/t010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/nicolas_jackson> .
+<http://semantic-football.org/data/player/erling_haaland> <http://www.w3.org/2000/01/rdf-schema#label> "Erling Haaland" .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#goalMinute> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/league/premier_league> <http://www.w3.org/2000/01/rdf-schema#label> "Premier League"@en .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g037> <http://purl.org/dc/elements/1.1/identifier> "g037" .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://www.w3.org/2000/01/rdf-schema#label> "Giovani Lo Celso" .
+<http://semantic-football.org/data/transfer/t003> <http://purl.org/dc/elements/1.1/identifier> "t003" .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#height> "195"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#goalMinute> "26"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/season/pl_2022_23> <http://semantic-football.org/ontology#seasonLabel> "2022-23" .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#awayScore> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/nationality/argentine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/phil_foden> .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://xmlns.com/foaf/0.1/name> "Pep Guardiola" .
+<http://semantic-football.org/data/goal/g019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/cristian_romero> <http://purl.org/dc/elements/1.1/identifier> "cristian_romero" .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/city/leipzig> <http://semantic-football.org/ontology#country> "Germany" .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#matchWeek> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://semantic-football.org/ontology#shortName> "Shakhtar" .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#isPenalty> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#capacity> "62850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#goalMinute> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://semantic-football.org/ontology#name> "Pep Guardiola" .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m003> .
+<http://semantic-football.org/data/match/m012> <http://purl.org/dc/elements/1.1/identifier> "m012" .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#height> "191"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/luis_diaz> <http://purl.org/dc/elements/1.1/identifier> "luis_diaz" .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/villarreal> .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/stadium/anfield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#matchWeek> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/giovani_lo_celso> .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/declan_rice> <http://www.w3.org/2000/01/rdf-schema#label> "Declan Rice" .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m013> .
+<http://semantic-football.org/data/nationality/french> <http://www.w3.org/2000/01/rdf-schema#label> "French"@en .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g028> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g028 (71')"@en .
+<http://semantic-football.org/data/nationality/brazilian> <http://www.w3.org/2000/01/rdf-schema#label> "Brazilian"@en .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://semantic-football.org/ontology#shortName> "Dortmund" .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#height> "188"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g021> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g021 (7')"@en .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#matchDate> "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g011> <http://purl.org/dc/elements/1.1/identifier> "g011" .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/borussia_dortmund> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#goalMinute> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#goalMinute> "61"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g004> <http://purl.org/dc/elements/1.1/identifier> "g004" .
+<http://semantic-football.org/data/city/eindhoven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#awayScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#shortName> "Aston Villa" .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/declan_rice> .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#isOwnGoal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g021> <http://purl.org/dc/elements/1.1/identifier> "g021" .
+<http://semantic-football.org/data/club/liverpool> <http://purl.org/dc/elements/1.1/identifier> "liverpool" .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://xmlns.com/foaf/0.1/name> "Mauricio Pochettino" .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#goalMinute> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#height> "180"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/nationality/northern_irish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/nationality/egyptian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/club/chelsea> <http://purl.org/dc/elements/1.1/identifier> "chelsea" .
+<http://semantic-football.org/data/goal/g005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/transfer/t002> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/cole_palmer> .
+<http://semantic-football.org/data/goal/g018> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g018 (81')"@en .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/nationality/hungarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#dateOfBirth> "2000-04-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/cristian_romero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/city/birmingham> <http://semantic-football.org/ontology#name> "Birmingham" .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#matchDate> "2023-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://semantic-football.org/ontology#name> "Mauricio Pochettino" .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/rodri> <http://purl.org/dc/elements/1.1/identifier> "rodri" .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#goalMinute> "84"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/son_heung_min> .
+<http://semantic-football.org/data/player/conor_bradley> <http://www.w3.org/2000/01/rdf-schema#label> "Conor Bradley" .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#addedTime> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/ollie_watkins> .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/norwegian> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://semantic-football.org/ontology#height> "178"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2020_21> .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#capacity> "61276"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#goalMinute> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/club/west_ham> <http://purl.org/dc/elements/1.1/identifier> "west_ham" .
+<http://semantic-football.org/data/club/rb_leipzig> <http://semantic-football.org/ontology#shortName> "Leipzig" .
+<http://semantic-football.org/data/goal/g029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m010> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#height> "178"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#name> "Son Heung-min" .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m010> .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#name> "Stamford Bridge" .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/birmingham> .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#transferDate> "2022-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://xmlns.com/foaf/0.1/name> "Mikel Arteta" .
+<http://semantic-football.org/data/nationality/hungarian> <http://www.w3.org/2000/01/rdf-schema#label> "Hungarian"@en .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m015> .
+<http://semantic-football.org/data/goal/g016> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g023> <http://purl.org/dc/elements/1.1/identifier> "g023" .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/club/tottenham> <http://purl.org/dc/elements/1.1/identifier> "tottenham" .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#name> "Jack Grealish" .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/city/manchester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/player/cole_palmer> <http://purl.org/dc/elements/1.1/identifier> "cole_palmer" .
+<http://semantic-football.org/data/club/rb_leipzig> <http://semantic-football.org/ontology#name> "RB Leipzig" .
+<http://semantic-football.org/data/city/donetsk> <http://semantic-football.org/ontology#name> "Donetsk" .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#matchWeek> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/stadium/anfield> <http://www.w3.org/2000/01/rdf-schema#label> "Anfield"@en .
+<http://semantic-football.org/data/match/m015> <http://www.w3.org/2000/01/rdf-schema#label> "Spurs 1-4 Chelsea (2023-11-06)"@en .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/emirates> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://semantic-football.org/ontology#name> "Mikel Arteta" .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/shakhtar_donetsk> .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m008> .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#goalMinute> "69"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g038> <http://purl.org/dc/elements/1.1/identifier> "g038" .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#matchWeek> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/city/liverpool> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#transferDate> "2023-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/transfer/t008> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/cody_gakpo> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://xmlns.com/foaf/0.1/name> "Nicolas Jackson" .
+<http://semantic-football.org/data/goal/g006> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g006 (80')"@en .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://www.w3.org/2000/01/rdf-schema#label> "Jürgen Klopp" .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/dutch> .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m012> .
+<http://semantic-football.org/data/match/m015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/transfer/t006> <http://semantic-football.org/ontology#transferDate> "2023-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/nicolas_jackson> .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/mohamed_salah> .
+<http://semantic-football.org/data/nationality/south_korean> <http://www.w3.org/2000/01/rdf-schema#label> "South Korean"@en .
+<http://semantic-football.org/data/nationality/swedish> <http://semantic-football.org/ontology#name> "Swedish" .
+<http://semantic-football.org/data/goal/g044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/city/london> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m011> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/season/pl_2022_23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Season> .
+<http://semantic-football.org/data/goal/g031> <http://purl.org/dc/elements/1.1/identifier> "g031" .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://purl.org/dc/elements/1.1/identifier> "stamford_bridge" .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#founded> "1880"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://www.w3.org/2000/01/rdf-schema#label> "Mykhailo Mudryk" .
+<http://semantic-football.org/data/goal/g013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g045> <http://semantic-football.org/ontology#addedTime> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g014> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/son_heung_min> .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/leon_bailey> .
+<http://semantic-football.org/data/match/m001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/french> .
+<http://semantic-football.org/data/goal/g030> <http://purl.org/dc/elements/1.1/identifier> "g030" .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/christopher_nkunku> .
+<http://semantic-football.org/data/goal/g036> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g036 (26')"@en .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#goalMinute> "73"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#founded> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/psv> <http://semantic-football.org/ontology#name> "PSV Eindhoven" .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#city> "Liverpool" .
+<http://semantic-football.org/data/club/rb_leipzig> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/leipzig> .
+<http://semantic-football.org/data/transfer/t009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/season/pl_2020_21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Season> .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#name> "Giovani Lo Celso" .
+<http://semantic-football.org/data/player/rodri> <http://www.w3.org/2000/01/rdf-schema#label> "Rodri" .
+<http://semantic-football.org/data/manager/unai_emery> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/spanish> .
+<http://semantic-football.org/data/transfer/t005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://www.w3.org/2000/01/rdf-schema#label> "Dejan Kulusevski" .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/cole_palmer> .
+<http://semantic-football.org/data/city/dortmund> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/club/chelsea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/ollie_watkins> .
+<http://semantic-football.org/data/player/diogo_jota> <http://xmlns.com/foaf/0.1/name> "Diogo Jota" .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/transfer/t002> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of cole_palmer: man_city → chelsea"@en .
+<http://semantic-football.org/data/stadium/emirates> <http://semantic-football.org/ontology#name> "Emirates Stadium" .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#homeScore> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g039> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g039 (55')"@en .
+<http://semantic-football.org/data/goal/g031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/season/pl_2021_22> <http://semantic-football.org/ontology#name> "Premier League 2021-22" .
+<http://semantic-football.org/data/club/psv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data> <http://www.w3.org/2002/07/owl#imports> <http://semantic-football.org/ontology> .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#goalMinute> "83"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/liverpool> .
+<http://semantic-football.org/data/club/west_ham> <http://semantic-football.org/ontology#name> "West Ham United FC" .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/club/brentford> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/goal/g043> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g043 (75')"@en .
+<http://semantic-football.org/data/season/pl_2021_22> <http://www.w3.org/2000/01/rdf-schema#label> "Premier League 2021-22"@en .
+<http://semantic-football.org/data/goal/g012> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g012 (45+7')"@en .
+<http://semantic-football.org/data/stadium/villa_park> <http://www.w3.org/2000/01/rdf-schema#label> "Villa Park"@en .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g035> <http://purl.org/dc/elements/1.1/identifier> "g035" .
+<http://semantic-football.org/data/goal/g035> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g035 (83')"@en .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#name> "Diogo Jota" .
+<http://semantic-football.org/data/goal/g006> <http://purl.org/dc/elements/1.1/identifier> "g006" .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/spanish> .
+<http://semantic-football.org/data/stadium/anfield> <http://semantic-football.org/ontology#name> "Anfield" .
+<http://semantic-football.org/data/nationality/colombian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/diogo_jota> <http://purl.org/dc/elements/1.1/identifier> "diogo_jota" .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/dominik_szoboszlai> .
+<http://semantic-football.org/data/club/west_ham> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/goal/g026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g005> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g005 (27')"@en .
+<http://semantic-football.org/data/goal/g003> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g003 (45+4')"@en .
+<http://semantic-football.org/data/goal/g024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#shortName> "Spurs" .
+<http://semantic-football.org/data/stadium/villa_park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#matchWeek> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m010> <http://purl.org/dc/elements/1.1/identifier> "m010" .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://semantic-football.org/ontology#dateOfBirth> "1971-01-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/manchester> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#matchWeek> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#goalMinute> "77"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m009> <http://www.w3.org/2000/01/rdf-schema#label> "Liverpool 3-0 Aston Villa (2023-09-03)"@en .
+<http://semantic-football.org/data/player/raheem_sterling> <http://xmlns.com/foaf/0.1/name> "Raheem Sterling" .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#goalMinute> "27"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g043> <http://purl.org/dc/elements/1.1/identifier> "g043" .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#transferFee> "28.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/club/villarreal> <http://semantic-football.org/ontology#city> "Villarreal" .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/ollie_watkins> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/conor_bradley> .
+<http://semantic-football.org/data/nationality/spanish> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish"@en .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/match/m014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://xmlns.com/foaf/0.1/name> "Christopher Nkunku" .
+<http://semantic-football.org/data/player/bukayo_saka> <http://purl.org/dc/elements/1.1/identifier> "bukayo_saka" .
+<http://semantic-football.org/data/transfer/t008> <http://semantic-football.org/ontology#transferDate> "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#name> "Raheem Sterling" .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m015> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g045> <http://purl.org/dc/elements/1.1/identifier> "g045" .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m011> .
+<http://semantic-football.org/data/city/villarreal> <http://semantic-football.org/ontology#name> "Villarreal" .
+<http://semantic-football.org/data/club/brentford> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://semantic-football.org/ontology#country> "Germany" .
+<http://semantic-football.org/data/transfer/t008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/matty_cash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g007> <http://purl.org/dc/elements/1.1/identifier> "g007" .
+<http://semantic-football.org/data/nationality/argentine> <http://www.w3.org/2000/01/rdf-schema#label> "Argentine"@en .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/stamford_bridge> .
+<http://semantic-football.org/data/club/psv> <http://purl.org/dc/elements/1.1/identifier> "psv" .
+<http://semantic-football.org/data/match/m005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/son_heung_min> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#name> "Christopher Nkunku" .
+<http://semantic-football.org/data/player/joel_matip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/club/rb_leipzig> <http://purl.org/dc/elements/1.1/identifier> "rb_leipzig" .
+<http://semantic-football.org/data/match/m001> <http://purl.org/dc/elements/1.1/identifier> "m001" .
+<http://semantic-football.org/data/nationality/australian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/club/west_ham> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g017> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/mikel_arteta> .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#transferDate> "2023-07-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#goalMinute> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/scottish> .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#dateOfBirth> "2000-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://semantic-football.org/ontology#dateOfBirth> "1967-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g028> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g032> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/gabriel_martinelli> .
+<http://semantic-football.org/data/goal/g007> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g007 (15')"@en .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://www.w3.org/2000/01/rdf-schema#label> "Mauricio Pochettino" .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#shortName> "Liverpool" .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/goal/g022> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m009> .
+<http://semantic-football.org/data/transfer/t004> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m005> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#participatesIn> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://xmlns.com/foaf/0.1/name> "Leandro Trossard" .
+<http://semantic-football.org/data/player/matty_cash> <http://xmlns.com/foaf/0.1/name> "Matty Cash" .
+<http://semantic-football.org/data/manager/mauricio_pochettino> <http://semantic-football.org/ontology#dateOfBirth> "1972-03-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g038> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/season/pl_2022_23> <http://purl.org/dc/elements/1.1/identifier> "pl_2022_23" .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://purl.org/dc/elements/1.1/identifier> "gabriel_martinelli" .
+<http://semantic-football.org/data/club/villarreal> <http://purl.org/dc/elements/1.1/identifier> "villarreal" .
+<http://semantic-football.org/data/club/brentford> <http://semantic-football.org/ontology#name> "Brentford FC" .
+<http://semantic-football.org/data/goal/g044> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g044 (90+4')"@en .
+<http://semantic-football.org/data/player/raheem_sterling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/son_heung_min> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/south_korean> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/birmingham> .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#name> "Matty Cash" .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/cole_palmer> .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/nationality/jamaican> <http://semantic-football.org/ontology#name> "Jamaican" .
+<http://semantic-football.org/data/goal/g044> <http://purl.org/dc/elements/1.1/identifier> "g044" .
+<http://semantic-football.org/data/nationality/south_korean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/mohamed_salah> <http://purl.org/dc/elements/1.1/identifier> "mohamed_salah" .
+<http://semantic-football.org/data/transfer/t006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/goal/g012> <http://purl.org/dc/elements/1.1/identifier> "g012" .
+<http://semantic-football.org/data/player/erling_haaland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/goal/g027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://xmlns.com/foaf/0.1/name> "Ange Postecoglou" .
+<http://semantic-football.org/data/transfer/t002> <http://purl.org/dc/elements/1.1/identifier> "t002" .
+<http://semantic-football.org/data/goal/g028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://www.w3.org/2000/01/rdf-schema#label> "Mikel Arteta" .
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/john_mcginn> <http://xmlns.com/foaf/0.1/name> "John McGinn" .
+<http://semantic-football.org/data/nationality/polish> <http://www.w3.org/2000/01/rdf-schema#label> "Polish"@en .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://semantic-football.org/ontology#dateOfBirth> "1965-08-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/nationality/polish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/city/leipzig> <http://www.w3.org/2000/01/rdf-schema#label> "Leipzig"@en .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://semantic-football.org/ontology#name> "Ange Postecoglou" .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#founded> "1882"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#matchDate> "2023-11-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/manchester> .
+<http://semantic-football.org/data/goal/g042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/declan_rice> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/nationality/cameroonian> <http://www.w3.org/2000/01/rdf-schema#label> "Cameroonian"@en .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#homeScore> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/pau_torres> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/pep_guardiola> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#name> "John McGinn" .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#height> "177"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/player/ollie_watkins> <http://purl.org/dc/elements/1.1/identifier> "ollie_watkins" .
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#isPenalty> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#opened> "2003"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#matchWeek> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t003> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of dominik_szoboszlai: rb_leipzig → liverpool"@en .
+<http://semantic-football.org/data/goal/g021> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/john_mcginn> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#shortName> "Man City" .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#height> "185"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://xmlns.com/foaf/0.1/name> "Gabriel Martinelli" .
+<http://semantic-football.org/data/season/pl_2022_23> <http://semantic-football.org/ontology#name> "Premier League 2022-23" .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g042> <http://purl.org/dc/elements/1.1/identifier> "g042" .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/city/villarreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://xmlns.com/foaf/0.1/name> "Mykhailo Mudryk" .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2022_23> .
+<http://semantic-football.org/data/club/brentford> <http://semantic-football.org/ontology#shortName> "Brentford" .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/joel_matip> .
+<http://semantic-football.org/data/transfer/t008> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/nationality/polish> <http://semantic-football.org/ontology#name> "Polish" .
+<http://semantic-football.org/data/transfer/t009> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of erling_haaland: borussia_dortmund → man_city"@en .
+<http://semantic-football.org/data/goal/g039> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m013> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/player/declan_rice> <http://purl.org/dc/elements/1.1/identifier> "declan_rice" .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/city/leipzig> <http://semantic-football.org/ontology#name> "Leipzig" .
+<http://semantic-football.org/data/player/pau_torres> <http://purl.org/dc/elements/1.1/identifier> "pau_torres" .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g045> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g045 (90+7')"@en .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Defender> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#name> "Cody Gakpo" .
+<http://semantic-football.org/data/goal/g033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#name> "Mykhailo Mudryk" .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/transfer/t005> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/pau_torres> .
+<http://semantic-football.org/data/player/erling_haaland> <http://purl.org/dc/elements/1.1/identifier> "erling_haaland" .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#city> "Birmingham" .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#dateOfBirth> "1997-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g008> <http://purl.org/dc/elements/1.1/identifier> "g008" .
+<http://semantic-football.org/data/goal/g019> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g019 (90')"@en .
+<http://semantic-football.org/data/goal/g001> <http://purl.org/dc/elements/1.1/identifier> "g001" .
+<http://semantic-football.org/data/match/m001> <http://www.w3.org/2000/01/rdf-schema#label> "Arsenal 1-0 Man City (2023-10-08)"@en .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#founded> "1905"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#name> "Joël Matip" .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m010> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g040> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m014> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#awayScore> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://purl.org/dc/elements/1.1/identifier> "leandro_trossard" .
+<http://semantic-football.org/data/player/joel_matip> <http://purl.org/dc/elements/1.1/identifier> "joel_matip" .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/mykhailo_mudryk> .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#capacity> "40044"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#dateOfBirth> "2000-10-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#matchDate> "2024-02-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#awayScore> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/match/m006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/nationality/cameroonian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/cole_palmer> <http://semantic-football.org/ontology#dateOfBirth> "2002-05-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m009> .
+<http://semantic-football.org/data/player/diogo_jota> <http://www.w3.org/2000/01/rdf-schema#label> "Diogo Jota" .
+<http://semantic-football.org/data/goal/g029> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g029 (79')"@en .
+<http://semantic-football.org/data/transfer/t004> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of christopher_nkunku: rb_leipzig → chelsea"@en .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#awayScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#goalMinute> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g006> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/trent_alexander_arnold> .
+<http://semantic-football.org/data/goal/g004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/match/m011> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#goalMinute> "42"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/goal/g010> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/nationality/senegalese> <http://semantic-football.org/ontology#name> "Senegalese" .
+<http://semantic-football.org/data/nationality/french> <http://semantic-football.org/ontology#name> "French" .
+<http://semantic-football.org/data/goal/g025> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/raheem_sterling> .
+<http://semantic-football.org/data/season/pl_2022_23> <http://www.w3.org/2000/01/rdf-schema#label> "Premier League 2022-23"@en .
+<http://semantic-football.org/data/player/phil_foden> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/goal/g007> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/gabriel_martinelli> .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/nicolas_jackson> .
+<http://semantic-football.org/data/club/psv> <http://semantic-football.org/ontology#city> "Eindhoven" .
+<http://semantic-football.org/data/match/m015> <http://purl.org/dc/elements/1.1/identifier> "m015" .
+<http://semantic-football.org/data/goal/g029> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/luis_diaz> .
+<http://semantic-football.org/data/match/m012> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#goalMinute> "74"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g043> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/city/dortmund> <http://www.w3.org/2000/01/rdf-schema#label> "Dortmund"@en .
+<http://semantic-football.org/data/goal/g042> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m015> .
+<http://semantic-football.org/data/manager/unai_emery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Manager> .
+<http://semantic-football.org/data/club/psv> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/eindhoven> .
+<http://semantic-football.org/data/goal/g033> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g033 (90+2')"@en .
+<http://semantic-football.org/data/city/manchester> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#dateOfBirth> "2001-01-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/city/birmingham> <http://www.w3.org/2000/01/rdf-schema#label> "Birmingham"@en .
+<http://semantic-football.org/data/goal/g013> <http://purl.org/dc/elements/1.1/identifier> "g013" .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#shortName> "Arsenal" .
+<http://semantic-football.org/data/player/raheem_sterling> <http://www.w3.org/2000/01/rdf-schema#label> "Raheem Sterling" .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#matchDate> "2023-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g002> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/son_heung_min> .
+<http://semantic-football.org/data/goal/g023> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/player/joel_matip> <http://semantic-football.org/ontology#dateOfBirth> "1991-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g036> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/stadium/villa_park> <http://semantic-football.org/ontology#name> "Villa Park" .
+<http://semantic-football.org/data/city/london> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#shortName> "PL" .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://purl.org/dc/elements/1.1/identifier> "dominik_szoboszlai" .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g041> <http://semantic-football.org/ontology#goalMinute> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/goal/g015> <http://purl.org/dc/elements/1.1/identifier> "g015" .
+<http://semantic-football.org/data/nationality/jamaican> <http://www.w3.org/2000/01/rdf-schema#label> "Jamaican"@en .
+<http://semantic-football.org/data/goal/g011> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g044> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/transfer/t009> <http://semantic-football.org/ontology#transferredPlayer> <http://semantic-football.org/data/player/erling_haaland> .
+<http://semantic-football.org/data/club/tottenham> <http://semantic-football.org/ontology#hasStadium> <http://semantic-football.org/data/stadium/tottenham_stadium> .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#goalMinute> "48"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t009> <http://purl.org/dc/elements/1.1/identifier> "t009" .
+<http://semantic-football.org/data/goal/g002> <http://purl.org/dc/elements/1.1/identifier> "g002" .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#matchDate> "2023-10-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/goal/g031> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g031 (45+3')"@en .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://www.w3.org/2000/01/rdf-schema#label> "Christopher Nkunku" .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m011> .
+<http://semantic-football.org/data/nationality/ukrainian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/goal/g013> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m005> .
+<http://semantic-football.org/data/match/m005> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/club/man_city> <http://semantic-football.org/ontology#country> "England" .
+<http://semantic-football.org/data/goal/g010> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g010 (84')"@en .
+<http://semantic-football.org/data/player/mykhailo_mudryk> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/player/john_mcginn> <http://semantic-football.org/ontology#dateOfBirth> "1994-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/league/premier_league> <http://semantic-football.org/ontology#hasSeason> <http://semantic-football.org/data/season/pl_2021_22> .
+<http://semantic-football.org/data/club/villarreal> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/villarreal> .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/city/london> <http://semantic-football.org/ontology#name> "London" .
+<http://semantic-football.org/data/transfer/t005> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of pau_torres: villarreal → aston_villa"@en .
+<http://semantic-football.org/data/match/m010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Match> .
+<http://semantic-football.org/data/goal/g043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m005> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/bukayo_saka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/erling_haaland> <http://semantic-football.org/ontology#height> "195"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/goal/g033> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/nationality/scottish> <http://semantic-football.org/ontology#name> "Scottish" .
+<http://semantic-football.org/data/goal/g035> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/rodri> .
+<http://semantic-football.org/data/goal/g041> <http://purl.org/dc/elements/1.1/identifier> "g041" .
+<http://semantic-football.org/data/club/villarreal> <http://semantic-football.org/ontology#name> "Villarreal CF" .
+<http://semantic-football.org/data/stadium/etihad> <http://www.w3.org/2000/01/rdf-schema#label> "Etihad Stadium"@en .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#awayScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/transfer/t007> <http://semantic-football.org/ontology#transferFee> "62.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/club/aston_villa> <http://www.w3.org/2000/01/rdf-schema#label> "Aston Villa FC"@en .
+<http://semantic-football.org/data/transfer/t005> <http://purl.org/dc/elements/1.1/identifier> "t005" .
+<http://semantic-football.org/data/nationality/jamaican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m007> <http://www.w3.org/2000/01/rdf-schema#label> "Aston Villa 1-0 Man City (2023-12-06)"@en .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#addedTime> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://semantic-football.org/ontology#height> "193"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/stadium/stamford_bridge> <http://semantic-football.org/ontology#city> "London" .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/manager/jurgen_klopp> <http://xmlns.com/foaf/0.1/name> "Jürgen Klopp" .
+<http://semantic-football.org/data/player/john_mcginn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/leon_bailey> <http://xmlns.com/foaf/0.1/name> "Leon Bailey" .
+<http://semantic-football.org/data/match/m013> <http://semantic-football.org/ontology#matchWeek> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#dateOfBirth> "1996-04-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/cole_palmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/manager/pep_guardiola> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/spanish> .
+<http://semantic-football.org/data/nationality/ukrainian> <http://semantic-football.org/ontology#name> "Ukrainian" .
+<http://semantic-football.org/data/player/mohamed_salah> <http://xmlns.com/foaf/0.1/name> "Mohamed Salah" .
+<http://semantic-football.org/data/stadium/etihad> <http://semantic-football.org/ontology#name> "Etihad Stadium" .
+<http://semantic-football.org/data/city/dortmund> <http://semantic-football.org/ontology#name> "Dortmund" .
+<http://semantic-football.org/data/nationality/dutch> <http://www.w3.org/2000/01/rdf-schema#label> "Dutch"@en .
+<http://semantic-football.org/data/goal/g004> <http://semantic-football.org/ontology#goalMinute> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g019> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/christopher_nkunku> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/nationality/australian> <http://semantic-football.org/ontology#name> "Australian" .
+<http://semantic-football.org/data/nationality/australian> <http://www.w3.org/2000/01/rdf-schema#label> "Australian"@en .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#dateOfBirth> "1994-12-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#name> "Leon Bailey" .
+<http://semantic-football.org/data/goal/g011> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g011 (22')"@en .
+<http://semantic-football.org/data/player/matty_cash> <http://www.w3.org/2000/01/rdf-schema#label> "Matty Cash" .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/stadium/emirates> <http://www.w3.org/2000/01/rdf-schema#label> "Emirates Stadium"@en .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#height> "190"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#name> "Mohamed Salah" .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#name> "Gabriel Magalhães" .
+<http://semantic-football.org/data/match/m015> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/stadium/emirates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/transfer/t001> <http://semantic-football.org/ontology#toClub> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/goal/g009> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m004> .
+<http://semantic-football.org/data/goal/g037> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/leon_bailey> <http://semantic-football.org/ontology#height> "178"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#height> "187"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#height> "180"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#dateOfBirth> "1997-12-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/club/rb_leipzig> <http://www.w3.org/2000/01/rdf-schema#label> "RB Leipzig"@en .
+<http://semantic-football.org/data/player/cristian_romero> <http://semantic-football.org/ontology#name> "Cristian Romero" .
+<http://semantic-football.org/data/transfer/t003> <http://semantic-football.org/ontology#inSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://xmlns.com/foaf/0.1/name> "Trent Alexander-Arnold" .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#name> "Dominik Szoboszlai" .
+<http://semantic-football.org/data/season/pl_2023_24> <http://semantic-football.org/ontology#name> "Premier League 2023-24" .
+<http://semantic-football.org/data/player/giovani_lo_celso> <http://semantic-football.org/ontology#height> "177"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/brazilian> .
+<http://semantic-football.org/data/match/m003> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/transfer/t008> <http://purl.org/dc/elements/1.1/identifier> "t008" .
+<http://semantic-football.org/data/player/raheem_sterling> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/player/matty_cash> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/polish> .
+<http://semantic-football.org/data/club/psv> <http://www.w3.org/2000/01/rdf-schema#label> "PSV Eindhoven"@en .
+<http://semantic-football.org/data/goal/g040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/club/shakhtar_donetsk> <http://www.w3.org/2000/01/rdf-schema#label> "FC Shakhtar Donetsk"@en .
+<http://semantic-football.org/data/goal/g024> <http://semantic-football.org/ontology#goalMinute> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g031> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/gabriel_magalhaes> .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/jurgen_klopp> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://purl.org/dc/elements/1.1/identifier> "nicolas_jackson" .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#name> "Trent Alexander-Arnold" .
+<http://semantic-football.org/data/city/london> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/goal/g025> <http://purl.org/dc/elements/1.1/identifier> "g025" .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/dominik_szoboszlai> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/player/leandro_trossard> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/goal/g009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/player/rodri> <http://semantic-football.org/ontology#height> "190"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/club/liverpool> <http://semantic-football.org/ontology#city> "Liverpool" .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/london> .
+<http://semantic-football.org/data/stadium/tottenham_stadium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Stadium> .
+<http://semantic-football.org/data/goal/g022> <http://purl.org/dc/elements/1.1/identifier> "g022" .
+<http://semantic-football.org/data/season/pl_2020_21> <http://semantic-football.org/ontology#seasonLabel> "2020-21" .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#wonBy> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/player/declan_rice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#height> "175"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/player/gabriel_magalhaes> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/club/liverpool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/city/donetsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#City> .
+<http://semantic-football.org/data/transfer/t004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Transfer> .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://www.w3.org/2000/01/rdf-schema#label> "Ange Postecoglou" .
+<http://semantic-football.org/data/goal/g008> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/goal/g005> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/cody_gakpo> <http://www.w3.org/2000/01/rdf-schema#label> "Cody Gakpo" .
+<http://semantic-football.org/data/goal/g014> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g014 (6')"@en .
+<http://semantic-football.org/data/player/trent_alexander_arnold> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/english> .
+<http://semantic-football.org/data/club/man_city> <http://www.w3.org/2000/01/rdf-schema#label> "Manchester City FC"@en .
+<http://semantic-football.org/data/player/mohamed_salah> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m002> <http://semantic-football.org/ontology#homeScore> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/player/leon_bailey> <http://purl.org/dc/elements/1.1/identifier> "leon_bailey" .
+<http://semantic-football.org/data/transfer/t010> <http://semantic-football.org/ontology#fromClub> <http://semantic-football.org/data/club/brentford> .
+<http://semantic-football.org/data/transfer/t010> <http://purl.org/dc/elements/1.1/identifier> "t010" .
+<http://semantic-football.org/data/player/pau_torres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/club/aston_villa> <http://semantic-football.org/ontology#city> "Birmingham" .
+<http://semantic-football.org/data/goal/g015> <http://semantic-football.org/ontology#scoredInMatch> <http://semantic-football.org/data/match/m006> .
+<http://semantic-football.org/data/goal/g026> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/son_heung_min> <http://purl.org/dc/elements/1.1/identifier> "son_heung_min" .
+<http://semantic-football.org/data/match/m010> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/tottenham> .
+<http://semantic-football.org/data/nationality/spanish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/player/luis_diaz> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/match/m007> <http://semantic-football.org/ontology#homeScore> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g020> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/raheem_sterling> <http://purl.org/dc/elements/1.1/identifier> "raheem_sterling" .
+<http://semantic-football.org/data/stadium/anfield> <http://purl.org/dc/elements/1.1/identifier> "anfield" .
+<http://semantic-football.org/data/player/diogo_jota> <http://semantic-football.org/ontology#height> "178"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://semantic-football.org/data/city/dortmund> <http://semantic-football.org/ontology#country> "Germany" .
+<http://semantic-football.org/data/manager/mikel_arteta> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/spanish> .
+<http://semantic-football.org/data/match/m007> <http://purl.org/dc/elements/1.1/identifier> "m007" .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/goal/g001> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/goal/g036> <http://purl.org/dc/elements/1.1/identifier> "g036" .
+<http://semantic-football.org/data/goal/g003> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/cody_gakpo> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://www.w3.org/2000/01/rdf-schema#label> "Gabriel Martinelli" .
+<http://semantic-football.org/data/nationality/german> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/club/rb_leipzig> <http://semantic-football.org/ontology#country> "Germany" .
+<http://semantic-football.org/data/manager/ange_postecoglou> <http://semantic-football.org/ontology#hasNationality> <http://semantic-football.org/data/nationality/australian> .
+<http://semantic-football.org/data/club/borussia_dortmund> <http://semantic-football.org/ontology#locatedIn> <http://semantic-football.org/data/city/dortmund> .
+<http://semantic-football.org/data/player/pau_torres> <http://xmlns.com/foaf/0.1/name> "Pau Torres" .
+<http://semantic-football.org/data/manager/unai_emery> <http://xmlns.com/foaf/0.1/name> "Unai Emery" .
+<http://semantic-football.org/data/club/arsenal> <http://semantic-football.org/ontology#name> "Arsenal FC" .
+<http://semantic-football.org/data/club/aston_villa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#FootballClub> .
+<http://semantic-football.org/data/goal/g015> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g015 (9')"@en .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#goalMinute> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantic-football.org/data/goal/g025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Goal> .
+<http://semantic-football.org/data/goal/g009> <http://purl.org/dc/elements/1.1/identifier> "g009" .
+<http://semantic-football.org/data/match/m008> <http://semantic-football.org/ontology#homeTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/match/m009> <http://purl.org/dc/elements/1.1/identifier> "m009" .
+<http://semantic-football.org/data/club/chelsea> <http://semantic-football.org/ontology#managedBy> <http://semantic-football.org/data/manager/mauricio_pochettino> .
+<http://semantic-football.org/data/player/conor_bradley> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/liverpool> .
+<http://semantic-football.org/data/match/m008> <http://purl.org/dc/elements/1.1/identifier> "m008" .
+<http://semantic-football.org/data/player/ollie_watkins> <http://semantic-football.org/ontology#dateOfBirth> "1995-12-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#partOfLeague> <http://semantic-football.org/data/league/premier_league> .
+<http://semantic-football.org/data/goal/g004> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g004 (90+6')"@en .
+<http://semantic-football.org/data/goal/g027> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/conor_bradley> <http://purl.org/dc/elements/1.1/identifier> "conor_bradley" .
+<http://semantic-football.org/data/player/jack_grealish> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/man_city> .
+<http://semantic-football.org/data/goal/g030> <http://www.w3.org/2000/01/rdf-schema#label> "Goal g030 (14')"@en .
+<http://semantic-football.org/data/nationality/norwegian> <http://semantic-football.org/ontology#name> "Norwegian" .
+<http://semantic-football.org/data/transfer/t006> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer of nicolas_jackson: villarreal → chelsea"@en .
+<http://semantic-football.org/data/match/m004> <http://semantic-football.org/ontology#matchDate> "2023-10-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/player/pau_torres> <http://semantic-football.org/ontology#name> "Pau Torres" .
+<http://semantic-football.org/data/goal/g030> <http://semantic-football.org/ontology#scoredForTeam> <http://semantic-football.org/data/club/arsenal> .
+<http://semantic-football.org/data/player/son_heung_min> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Player> .
+<http://semantic-football.org/data/player/gabriel_martinelli> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Forward> .
+<http://semantic-football.org/data/match/m009> <http://semantic-football.org/ontology#awayTeam> <http://semantic-football.org/data/club/aston_villa> .
+<http://semantic-football.org/data/player/joel_matip> <http://www.w3.org/2000/01/rdf-schema#label> "Joël Matip" .
+<http://semantic-football.org/data/goal/g034> <http://semantic-football.org/ontology#isOwnGoal> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/player/dejan_kulusevski> <http://semantic-football.org/ontology#hasPosition> <http://semantic-football.org/ontology#Midfielder> .
+<http://semantic-football.org/data/player/nicolas_jackson> <http://semantic-football.org/ontology#playsFor> <http://semantic-football.org/data/club/chelsea> .
+<http://semantic-football.org/data/goal/g012> <http://semantic-football.org/ontology#isPenalty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://semantic-football.org/data/match/m014> <http://semantic-football.org/ontology#matchDate> "2023-09-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantic-football.org/data/nationality/senegalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantic-football.org/ontology#Nationality> .
+<http://semantic-football.org/data/match/m006> <http://semantic-football.org/ontology#partOfSeason> <http://semantic-football.org/data/season/pl_2023_24> .
+<http://semantic-football.org/data/nationality/german> <http://www.w3.org/2000/01/rdf-schema#label> "German"@en .
+<http://semantic-football.org/data/goal/g018> <http://semantic-football.org/ontology#scoredBy> <http://semantic-football.org/data/player/jack_grealish> .
+<http://semantic-football.org/data/match/m001> <http://semantic-football.org/ontology#awayScore> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .

@@ -1,0 +1,10 @@
+city_id,name,country,geonames_id,wikidata_id,dbpedia_uri
+london,London,England,2643743,Q84,http://dbpedia.org/resource/London
+manchester,Manchester,England,2643123,Q18125,http://dbpedia.org/resource/Manchester
+liverpool,Liverpool,England,2644210,Q24826,http://dbpedia.org/resource/Liverpool
+birmingham,Birmingham,England,2655603,Q2256,http://dbpedia.org/resource/Birmingham
+leipzig,Leipzig,Germany,,Q2079,http://dbpedia.org/resource/Leipzig
+dortmund,Dortmund,Germany,,Q1295,http://dbpedia.org/resource/Dortmund
+donetsk,Donetsk,Ukraine,,Q43070,http://dbpedia.org/resource/Donetsk
+eindhoven,Eindhoven,Netherlands,,Q9832,http://dbpedia.org/resource/Eindhoven
+villarreal,Villarreal,Spain,,Q12292,http://dbpedia.org/resource/Villarreal

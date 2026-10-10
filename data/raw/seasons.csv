@@ -1,0 +1,5 @@
+season_id,label,start_year,end_year,league_id,wikidata_id,dbpedia_uri
+pl_2023_24,2023-24,2023,2024,premier_league,Q116977381,http://dbpedia.org/resource/2023–24_Premier_League
+pl_2022_23,2022-23,2022,2023,premier_league,Q111134726,http://dbpedia.org/resource/2022–23_Premier_League
+pl_2021_22,2021-22,2021,2022,premier_league,Q105718943,http://dbpedia.org/resource/2021–22_Premier_League
+pl_2020_21,2020-21,2020,2021,premier_league,Q69622172,http://dbpedia.org/resource/2020–21_Premier_League

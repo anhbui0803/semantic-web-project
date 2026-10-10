@@ -1,0 +1,8 @@
+club_id,name,short_name,city,country,wikidata_id,dbpedia_uri
+west_ham,West Ham United FC,West Ham,London,England,Q18747,http://dbpedia.org/resource/West_Ham_United_F.C.
+brentford,Brentford FC,Brentford,London,England,Q19571,http://dbpedia.org/resource/Brentford_F.C.
+rb_leipzig,RB Leipzig,Leipzig,Leipzig,Germany,Q702455,http://dbpedia.org/resource/RB_Leipzig
+villarreal,Villarreal CF,Villarreal,Villarreal,Spain,Q12297,http://dbpedia.org/resource/Villarreal_CF
+shakhtar_donetsk,FC Shakhtar Donetsk,Shakhtar,Donetsk,Ukraine,Q172969,http://dbpedia.org/resource/FC_Shakhtar_Donetsk
+psv,PSV Eindhoven,PSV,Eindhoven,Netherlands,Q11938,http://dbpedia.org/resource/PSV_Eindhoven
+borussia_dortmund,Borussia Dortmund,Dortmund,Dortmund,Germany,Q41420,http://dbpedia.org/resource/Borussia_Dortmund

@@ -1,0 +1,398 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix onto:  <http://semantic-football.org/ontology#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+
+# ─────────────────────────────────────────────────────────────
+#  Ontology Metadata
+# ─────────────────────────────────────────────────────────────
+<http://semantic-football.org/ontology>
+    a                owl:Ontology ;
+    dc:title         "Football Ontology"@en ;
+    dc:description   "An OWL ontology for the football (soccer) domain covering clubs, players, matches, leagues, stadiums, transfers, and goals."@en ;
+    dc:creator       "Semantic Web Course Project" ;
+    dc:date          "2026-03-16"^^xsd:date ;
+    owl:versionInfo  "1.2" ;
+    dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "onto" ;
+    vann:preferredNamespaceUri    "http://semantic-football.org/ontology#" ;
+    rdfs:comment     "Classes are aligned with schema.org, FOAF and the DBpedia ontology (dbo:) so that consumers of those vocabularies can interpret the data."@en .
+
+# ─────────────────────────────────────────────────────────────
+#  Classes
+# ─────────────────────────────────────────────────────────────
+
+onto:FootballClub
+    a                owl:Class ;
+    rdfs:label       "Football Club"@en ;
+    rdfs:comment     "A professional football club / team."@en ;
+    rdfs:subClassOf  schema:SportsTeam ;
+    rdfs:subClassOf  dbo:SoccerClub .
+
+onto:Player
+    a                owl:Class ;
+    rdfs:label       "Player"@en ;
+    rdfs:comment     "A professional football player."@en ;
+    rdfs:subClassOf  foaf:Person ;
+    rdfs:subClassOf  schema:Person ;
+    rdfs:subClassOf  dbo:SoccerPlayer .
+
+onto:Manager
+    a                owl:Class ;
+    rdfs:label       "Manager"@en ;
+    rdfs:comment     "A football team manager / head coach."@en ;
+    rdfs:subClassOf  foaf:Person ;
+    rdfs:subClassOf  schema:Person ;
+    rdfs:subClassOf  dbo:SoccerManager .
+
+onto:Match
+    a                owl:Class ;
+    rdfs:label       "Match"@en ;
+    rdfs:comment     "A scheduled football match between two clubs."@en ;
+    rdfs:subClassOf  schema:SportsEvent ;
+    rdfs:subClassOf  dbo:FootballMatch .
+
+onto:League
+    a                owl:Class ;
+    rdfs:label       "League"@en ;
+    rdfs:comment     "A football competition or league."@en ;
+    rdfs:subClassOf  schema:SportsOrganization ;
+    rdfs:subClassOf  dbo:SoccerLeague .
+
+onto:Season
+    a                owl:Class ;
+    rdfs:label       "Season"@en ;
+    rdfs:comment     "A football season (e.g., 2023-24)."@en ;
+    rdfs:subClassOf  dbo:SoccerLeagueSeason .
+
+onto:Stadium
+    a                owl:Class ;
+    rdfs:label       "Stadium"@en ;
+    rdfs:comment     "A football stadium."@en ;
+    rdfs:subClassOf  schema:StadiumOrArena ;
+    rdfs:subClassOf  dbo:Stadium .
+
+onto:Position
+    a                owl:Class ;
+    rdfs:label       "Position"@en ;
+    rdfs:comment     "A playing position on the field (GK, DF, MF, FW)."@en .
+
+onto:Goal
+    a                owl:Class ;
+    rdfs:label       "Goal"@en ;
+    rdfs:comment     "A goal scored during a match."@en .
+
+onto:Transfer
+    a                owl:Class ;
+    rdfs:label       "Transfer"@en ;
+    rdfs:comment     "A player transfer between clubs."@en .
+
+onto:Nationality
+    a                owl:Class ;
+    rdfs:label       "Nationality"@en ;
+    rdfs:comment     "A nationality (e.g. 'Norwegian') associated with a person. A nationality is NOT the same thing as a country, so it is linked to its country with onto:nationalityCountry instead of owl:sameAs."@en .
+
+onto:City
+    a                owl:Class ;
+    rdfs:label       "City"@en ;
+    rdfs:comment     "A city where clubs and stadiums are located."@en ;
+    rdfs:subClassOf  schema:City .
+
+# ─────────────────────────────────────────────────────────────
+#  Object Properties
+# ─────────────────────────────────────────────────────────────
+
+onto:playsFor
+    a                owl:ObjectProperty ;
+    rdfs:label       "plays for"@en ;
+    rdfs:comment     "Relates a player to the football club they currently play for."@en ;
+    rdfs:domain      onto:Player ;
+    rdfs:range       onto:FootballClub ;
+    rdfs:subPropertyOf dbo:team .
+
+onto:hasPosition
+    a                owl:ObjectProperty ;
+    rdfs:label       "has position"@en ;
+    rdfs:comment     "The playing position of a player."@en ;
+    rdfs:domain      onto:Player ;
+    rdfs:range       onto:Position .
+
+onto:hasNationality
+    a                owl:ObjectProperty ;
+    rdfs:label       "has nationality"@en ;
+    rdfs:comment     "Nationality of a person (player or manager)."@en ;
+    rdfs:domain      foaf:Person ;
+    rdfs:range       onto:Nationality .
+
+onto:managedBy
+    a                owl:ObjectProperty ;
+    rdfs:label       "managed by"@en ;
+    rdfs:domain      onto:FootballClub ;
+    rdfs:range       onto:Manager ;
+    rdfs:subPropertyOf dbo:manager .
+
+onto:hasStadium
+    a                owl:ObjectProperty ;
+    rdfs:label       "has stadium"@en ;
+    rdfs:domain      onto:FootballClub ;
+    rdfs:range       onto:Stadium ;
+    rdfs:subPropertyOf dbo:ground .
+
+onto:participatesIn
+    a                owl:ObjectProperty ;
+    rdfs:label       "participates in"@en ;
+    rdfs:domain      onto:FootballClub ;
+    rdfs:range       onto:League .
+
+onto:nationalityCountry
+    a                owl:ObjectProperty ;
+    rdfs:label       "nationality country"@en ;
+    rdfs:comment     "Links a nationality to the external country resource (Wikidata / DBpedia) it refers to."@en ;
+    rdfs:domain      onto:Nationality ;
+    rdfs:range       schema:Country .
+
+onto:locatedIn
+    a                owl:ObjectProperty ;
+    rdfs:label       "located in"@en ;
+    rdfs:comment     "Links a club or stadium to the city it is located in."@en ;
+    rdfs:range       onto:City ;
+    rdfs:subPropertyOf schema:location .
+
+# Match relations
+onto:homeTeam
+    a                owl:ObjectProperty ;
+    rdfs:label       "home team"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       onto:FootballClub .
+
+onto:awayTeam
+    a                owl:ObjectProperty ;
+    rdfs:label       "away team"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       onto:FootballClub .
+
+onto:partOfLeague
+    a                owl:ObjectProperty ;
+    rdfs:label       "part of league"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       onto:League .
+
+onto:partOfSeason
+    a                owl:ObjectProperty ;
+    rdfs:label       "part of season"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       onto:Season .
+
+onto:wonBy
+    a                owl:ObjectProperty ;
+    rdfs:label       "won by"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       onto:FootballClub .
+
+# Goal relations
+onto:scoredBy
+    a                owl:ObjectProperty ;
+    rdfs:label       "scored by"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       onto:Player .
+
+onto:scoredInMatch
+    a                owl:ObjectProperty ;
+    rdfs:label       "scored in match"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       onto:Match .
+
+onto:scoredForTeam
+    a                owl:ObjectProperty ;
+    rdfs:label       "scored for team"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       onto:FootballClub .
+
+# Transfer relations
+onto:transferredPlayer
+    a                owl:ObjectProperty ;
+    rdfs:label       "transferred player"@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       onto:Player .
+
+onto:fromClub
+    a                owl:ObjectProperty ;
+    rdfs:label       "from club"@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       onto:FootballClub .
+
+onto:toClub
+    a                owl:ObjectProperty ;
+    rdfs:label       "to club"@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       onto:FootballClub .
+
+onto:inSeason
+    a                owl:ObjectProperty ;
+    rdfs:label       "in season"@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       onto:Season .
+
+# League / Season relations
+onto:hasSeason
+    a                owl:ObjectProperty ;
+    rdfs:label       "has season"@en ;
+    rdfs:domain      onto:League ;
+    rdfs:range       onto:Season .
+
+# ─────────────────────────────────────────────────────────────
+#  Datatype Properties
+# ─────────────────────────────────────────────────────────────
+
+onto:name
+    a                owl:DatatypeProperty ;
+    rdfs:label       "name"@en ;
+    rdfs:range       xsd:string ;
+    rdfs:subPropertyOf schema:name .
+
+onto:shortName
+    a                owl:DatatypeProperty ;
+    rdfs:label       "short name"@en ;
+    rdfs:range       xsd:string .
+
+onto:dateOfBirth
+    a                owl:DatatypeProperty ;
+    rdfs:label       "date of birth"@en ;
+    rdfs:domain      foaf:Person ;
+    rdfs:range       xsd:date ;
+    rdfs:subPropertyOf dbo:birthDate .
+
+onto:height
+    a                owl:DatatypeProperty ;
+    rdfs:label       "height (cm)"@en ;
+    rdfs:domain      onto:Player ;
+    rdfs:range       xsd:decimal .
+
+onto:founded
+    a                owl:DatatypeProperty ;
+    rdfs:label       "year founded"@en ;
+    rdfs:comment     "Year a club or league was founded."@en ;
+    rdfs:range       xsd:integer .
+
+onto:opened
+    a                owl:DatatypeProperty ;
+    rdfs:label       "year opened"@en ;
+    rdfs:domain      onto:Stadium ;
+    rdfs:range       xsd:integer .
+
+onto:city
+    a                owl:DatatypeProperty ;
+    rdfs:label       "city"@en ;
+    rdfs:range       xsd:string .
+
+onto:country
+    a                owl:DatatypeProperty ;
+    rdfs:label       "country"@en ;
+    rdfs:range       xsd:string .
+
+onto:capacity
+    a                owl:DatatypeProperty ;
+    rdfs:label       "capacity"@en ;
+    rdfs:domain      onto:Stadium ;
+    rdfs:range       xsd:integer ;
+    rdfs:subPropertyOf dbo:seatingCapacity .
+
+onto:matchDate
+    a                owl:DatatypeProperty ;
+    rdfs:label       "match date"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       xsd:date .
+
+onto:matchWeek
+    a                owl:DatatypeProperty ;
+    rdfs:label       "match week"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       xsd:integer .
+
+onto:homeScore
+    a                owl:DatatypeProperty ;
+    rdfs:label       "home score"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       xsd:integer .
+
+onto:awayScore
+    a                owl:DatatypeProperty ;
+    rdfs:label       "away score"@en ;
+    rdfs:domain      onto:Match ;
+    rdfs:range       xsd:integer .
+
+onto:goalMinute
+    a                owl:DatatypeProperty ;
+    rdfs:label       "goal minute"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       xsd:integer .
+
+onto:addedTime
+    a                owl:DatatypeProperty ;
+    rdfs:label       "added time (minutes)"@en ;
+    rdfs:comment     "Stoppage-time minutes after goalMinute, e.g. 90+6 is goalMinute 90 and addedTime 6."@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       xsd:integer .
+
+onto:isPenalty
+    a                owl:DatatypeProperty ;
+    rdfs:label       "is penalty"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       xsd:boolean .
+
+onto:isOwnGoal
+    a                owl:DatatypeProperty ;
+    rdfs:label       "is own goal"@en ;
+    rdfs:domain      onto:Goal ;
+    rdfs:range       xsd:boolean .
+
+onto:transferFee
+    a                owl:DatatypeProperty ;
+    rdfs:label       "transfer fee (million GBP)"@en ;
+    rdfs:comment     "Initial fee as reported, excluding add-ons."@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       xsd:decimal .
+
+onto:transferDate
+    a                owl:DatatypeProperty ;
+    rdfs:label       "transfer date"@en ;
+    rdfs:domain      onto:Transfer ;
+    rdfs:range       xsd:date .
+
+onto:seasonLabel
+    a                owl:DatatypeProperty ;
+    rdfs:label       "season label"@en ;
+    rdfs:domain      onto:Season ;
+    rdfs:range       xsd:string .
+
+# ─────────────────────────────────────────────────────────────
+#  Named Individuals — Positions
+# ─────────────────────────────────────────────────────────────
+
+onto:Goalkeeper
+    a                onto:Position , owl:NamedIndividual ;
+    onto:name        "Goalkeeper" ;
+    onto:shortName   "GK" .
+
+onto:Defender
+    a                onto:Position , owl:NamedIndividual ;
+    onto:name        "Defender" ;
+    onto:shortName   "DF" .
+
+onto:Midfielder
+    a                onto:Position , owl:NamedIndividual ;
+    onto:name        "Midfielder" ;
+    onto:shortName   "MF" .
+
+onto:Forward
+    a                onto:Position , owl:NamedIndividual ;
+    onto:name        "Forward" ;
+    onto:shortName   "FW" .

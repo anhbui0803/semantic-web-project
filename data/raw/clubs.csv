@@ -1,0 +1,7 @@
+club_id,name,short_name,founded,city,country,stadium_id,wikidata_id,dbpedia_uri
+man_city,Manchester City FC,Man City,1880,Manchester,England,etihad,Q50602,http://dbpedia.org/resource/Manchester_City_F.C.
+arsenal,Arsenal FC,Arsenal,1886,London,England,emirates,Q9617,http://dbpedia.org/resource/Arsenal_F.C.
+liverpool,Liverpool FC,Liverpool,1892,Liverpool,England,anfield,Q1130849,http://dbpedia.org/resource/Liverpool_F.C.
+aston_villa,Aston Villa FC,Aston Villa,1874,Birmingham,England,villa_park,Q18711,http://dbpedia.org/resource/Aston_Villa_F.C.
+tottenham,Tottenham Hotspur FC,Spurs,1882,London,England,tottenham_stadium,Q18741,http://dbpedia.org/resource/Tottenham_Hotspur_F.C.
+chelsea,Chelsea FC,Chelsea,1905,London,England,stamford_bridge,Q9616,http://dbpedia.org/resource/Chelsea_F.C.

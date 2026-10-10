@@ -1,0 +1,7 @@
+manager_id,name,date_of_birth,nationality,club_id,wikidata_id,dbpedia_uri
+pep_guardiola,Pep Guardiola,1971-01-18,Spanish,man_city,Q164038,http://dbpedia.org/resource/Pep_Guardiola
+mikel_arteta,Mikel Arteta,1982-03-26,Spanish,arsenal,Q185572,http://dbpedia.org/resource/Mikel_Arteta
+jurgen_klopp,Jürgen Klopp,1967-06-16,German,liverpool,Q83106,http://dbpedia.org/resource/Jürgen_Klopp
+unai_emery,Unai Emery,1971-11-03,Spanish,aston_villa,Q295610,http://dbpedia.org/resource/Unai_Emery
+ange_postecoglou,Ange Postecoglou,1965-08-27,Australian,tottenham,Q2849301,http://dbpedia.org/resource/Ange_Postecoglou
+mauricio_pochettino,Mauricio Pochettino,1972-03-02,Argentine,chelsea,Q313000,http://dbpedia.org/resource/Mauricio_Pochettino

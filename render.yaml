@@ -1,0 +1,14 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# Deploys the SPARQL endpoint + web UI (scripts/app.py) as a free web service.
+# The RDF files in data/ are committed to the repo, so no build step runs the pipeline.
+services:
+  - type: web
+    name: semantic-football
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir scripts app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"

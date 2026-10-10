@@ -1,0 +1,7 @@
+stadium_id,name,city,country,capacity,opened,wikidata_id,dbpedia_uri
+etihad,Etihad Stadium,Manchester,England,61038,2003,Q48159,http://dbpedia.org/resource/City_of_Manchester_Stadium
+emirates,Emirates Stadium,London,England,60704,2006,Q163995,http://dbpedia.org/resource/Emirates_Stadium
+anfield,Anfield,Liverpool,England,61276,1884,Q45671,http://dbpedia.org/resource/Anfield
+villa_park,Villa Park,Birmingham,England,43205,1897,Q175339,http://dbpedia.org/resource/Villa_Park
+tottenham_stadium,Tottenham Hotspur Stadium,London,England,62850,2019,Q55074091,http://dbpedia.org/resource/Tottenham_Hotspur_Stadium
+stamford_bridge,Stamford Bridge,London,England,40044,1877,Q171458,http://dbpedia.org/resource/Stamford_Bridge_(stadium)

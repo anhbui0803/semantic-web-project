@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Football Linked Data — SPARQL Explorer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0f1117;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #1a1f2e 0%, #16213e 100%);
+    border-bottom: 1px solid #2d3748;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  header .logo { font-size: 28px; }
+  header h1 { font-size: 20px; font-weight: 700; color: #f7fafc; }
+  header p  { font-size: 13px; color: #718096; margin-top: 2px; }
+  .toplinks { margin-left: auto; display: flex; gap: 14px; font-size: 13px; }
+  .toplinks a { color: #90cdf4; text-decoration: none; }
+  .toplinks a:hover { text-decoration: underline; }
+  .badge {
+    background: #2d6a4f;
+    color: #b7e4c7;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: .5px;
+  }
+
+  /* ── Layout ── */
+  .main { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 65px); }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: #141820;
+    border-right: 1px solid #2d3748;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .sidebar-title {
+    padding: 14px 16px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #4a5568;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .example-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #a0aec0;
+    font-size: 13px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all .15s;
+  }
+  .example-btn:hover  { background: #1e2433; color: #e2e8f0; }
+  .example-btn.active { background: #1e2d45; color: #63b3ed; border-left-color: #3182ce; }
+
+  /* ── Editor panel ── */
+  .editor-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .query-area {
+    padding: 16px;
+    border-bottom: 1px solid #2d3748;
+    background: #141820;
+  }
+  .query-area label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #4a5568;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+  textarea#query {
+    width: 100%;
+    height: 170px;
+    background: #0d1117;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 12px;
+    resize: vertical;
+    outline: none;
+    transition: border-color .2s;
+  }
+  textarea#query:focus { border-color: #3182ce; }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: #141820;
+    border-bottom: 1px solid #2d3748;
+  }
+  #run-btn {
+    background: #2b6cb0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background .2s;
+  }
+  #run-btn:hover    { background: #2c5282; }
+  #run-btn:disabled { background: #2d3748; cursor: not-allowed; }
+  #clear-btn {
+    background: none;
+    border: 1px solid #2d3748;
+    color: #718096;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  #clear-btn:hover { border-color: #4a5568; color: #a0aec0; }
+
+  .stats { margin-left: auto; font-size: 12px; color: #4a5568; }
+  .stats span { color: #63b3ed; font-weight: 600; }
+
+  /* ── Results ── */
+  .results-area {
+    flex: 1;
+    overflow: auto;
+    padding: 16px;
+  }
+
+  .result-meta {
+    font-size: 12px;
+    color: #718096;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .result-meta .pill {
+    background: #1a2035;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 11px;
+  }
+  .result-meta .pill.green { border-color: #276749; color: #9ae6b4; }
+  .result-meta .pill.red   { border-color: #742a2a; color: #fc8181; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: #1a2035;
+    color: #90cdf4;
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 2px solid #2d3748;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid #1e2535; }
+  tbody tr:hover { background: #141c2b; }
+  tbody td {
+    padding: 9px 14px;
+    color: #cbd5e0;
+    max-width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  td.uri  { color: #76e4f7; font-size: 12px; }
+  td.num  { color: #fbd38d; font-weight: 600; }
+  td.bool-true  { color: #9ae6b4; }
+  td.bool-false { color: #718096; }
+
+  /* DESCRIBE output */
+  .describe-block {
+    background: #0d1117;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 14px;
+    font-family: monospace;
+    font-size: 12.5px;
+    line-height: 1.8;
+  }
+  .describe-block .subject  { color: #76e4f7; font-weight: 700; }
+  .describe-block .pred     { color: #d6bcfa; }
+  .describe-block .obj      { color: #fbd38d; }
+  .describe-block .obj.lit  { color: #9ae6b4; }
+
+  /* ASK result */
+  .ask-result {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .ask-result.true  { color: #48bb78; }
+  .ask-result.false { color: #fc8181; }
+
+  /* Error / empty */
+  .msg-box {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .msg-box.error { background: #2d1515; border: 1px solid #742a2a; color: #fc8181; }
+  .msg-box.empty { background: #1a1f2e; border: 1px solid #2d3748; color: #4a5568; }
+
+  /* Spinner */
+  .spinner {
+    width: 16px; height: 16px;
+    border: 2px solid #4a5568;
+    border-top-color: #63b3ed;
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    display: none;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #run-btn.loading .spinner { display: block; }
+  #run-btn.loading .btn-text { display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="logo">⚽</span>
+  <div>
+    <h1>Football Linked Data</h1>
+    <p>Premier League 2023–24 &nbsp;·&nbsp; SPARQL Explorer</p>
+  </div>
+  <nav class="toplinks">
+    <a href="/sparql" title="SPARQL 1.1 Protocol endpoint (GET/POST ?query=)">SPARQL endpoint</a>
+    <a href="/data/club/arsenal" title="Dereferenceable resource page (content negotiation)">Browse data</a>
+    <a href="/ontology">Ontology</a>
+    <a href="/void">VoID</a>
+    <a href="/dump/football_linked.ttl">Dump (.ttl)</a>
+  </nav>
+  <span class="badge">★★★★★ 5-Star Linked Data</span>
+</header>
+
+<div class="main">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-title">Example Queries</div>
+    {% for key, q in examples.items() %}
+    <button class="example-btn" onclick="loadExample('{{ key }}')" id="btn-{{ key }}">
+      {{ q.label }}{% if 'network' in q.requires %} 🌐{% endif %}
+    </button>
+    {% endfor %}
+  </aside>
+
+  <!-- Editor + Results -->
+  <div class="editor-panel">
+
+    <div class="query-area">
+      <label>SPARQL Query</label>
+      <textarea id="query" spellcheck="false" placeholder="Type a SPARQL query here…&#10;&#10;Prefixes (onto:, data:, owl:, foaf:, schema:, skos:, dbo:, wd: …) are added automatically. Ctrl+Enter runs the query."></textarea>
+    </div>
+
+    <div class="toolbar">
+      <button id="run-btn" onclick="runQuery()">
+        <span class="btn-text">▶ Run Query</span>
+        <div class="spinner"></div>
+      </button>
+      <button id="clear-btn" onclick="clearAll()">Clear</button>
+      <div class="stats">Dataset: <span>{{ triple_count }}</span> triples</div>
+    </div>
+
+    <div class="results-area" id="results">
+      <div class="msg-box empty">Select an example from the sidebar or write a query above, then click <strong>Run Query</strong>.</div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const EXAMPLES = {{ examples_json | safe }};
+let activeBtn = null;
+
+function loadExample(key) {
+  const q = EXAMPLES[key];
+  if (!q) return;
+  document.getElementById('query').value = q.query;
+  // highlight active button
+  if (activeBtn) activeBtn.classList.remove('active');
+  activeBtn = document.getElementById('btn-' + key);
+  if (activeBtn) activeBtn.classList.add('active');
+  runQuery();
+}
+
+function clearAll() {
+  document.getElementById('query').value = '';
+  document.getElementById('results').innerHTML =
+    '<div class="msg-box empty">Query cleared.</div>';
+  if (activeBtn) { activeBtn.classList.remove('active'); activeBtn = null; }
+}
+
+async function runQuery() {
+  const query = document.getElementById('query').value.trim();
+  if (!query) return;
+
+  const btn = document.getElementById('run-btn');
+  btn.disabled = true;
+  btn.classList.add('loading');
+
+  try {
+    const res  = await fetch('/api/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query })
+    });
+    const data = await res.json();
+    renderResult(data);
+  } catch (e) {
+    document.getElementById('results').innerHTML =
+      `<div class="msg-box error">Network error: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('loading');
+  }
+}
+
+function shortenURI(uri) {
+  const MAP = [
+    ['http://semantic-football.org/data/',        'data:'],
+    ['http://semantic-football.org/ontology#',    'onto:'],
+    ['http://www.wikidata.org/entity/',           'wd:'],
+    ['http://dbpedia.org/resource/',              'dbr:'],
+    ['http://dbpedia.org/ontology/',              'dbo:'],
+    ['http://sws.geonames.org/',                  'geonames:'],
+    ['https://sws.geonames.org/',                 'geo:'],
+    ['https://schema.org/',                       'schema:'],
+    ['http://www.w3.org/2002/07/owl#',            'owl:'],
+    ['http://xmlns.com/foaf/0.1/',                'foaf:'],
+    ['http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'rdf:'],
+  ];
+  for (const [long, short] of MAP) {
+    if (uri.startsWith(long)) return short + uri.slice(long.length);
+  }
+  return uri;
+}
+
+function renderResult(data) {
+  const out = document.getElementById('results');
+
+  if (data.error) {
+    out.innerHTML = `<div class="msg-box error"><strong>SPARQL Error:</strong><br><pre style="margin-top:8px;white-space:pre-wrap">${escHtml(data.error)}</pre></div>`;
+    return;
+  }
+
+  if (data.type === 'ask') {
+    const cls = data.result ? 'true' : 'false';
+    const icon = data.result ? '✔' : '✘';
+    out.innerHTML = `
+      <div class="result-meta"><span class="pill">ASK</span></div>
+      <div class="ask-result ${cls}">${icon} ${data.result}</div>`;
+    return;
+  }
+
+  if (data.type === 'describe') {
+    let html = `<div class="result-meta"><span class="pill">DESCRIBE</span><span class="pill green">${data.triples.length} triple(s)</span></div>`;
+    html += '<div class="describe-block">';
+    let lastSubj = null;
+    for (const [s, p, o, oType] of data.triples) {
+      const ss = shortenURI(s), ps = shortenURI(p);
+      const os = oType === 'uri' ? shortenURI(o) : o;
+      const objCls = oType === 'uri' ? 'obj' : 'obj lit';
+      if (s !== lastSubj) {
+        if (lastSubj !== null) html += '<br>';
+        html += `<span class="subject">${escHtml(ss)}</span><br>`;
+        lastSubj = s;
+      }
+      html += `&nbsp;&nbsp;&nbsp;&nbsp;<span class="pred">${escHtml(ps)}</span> <span class="${objCls}">${escHtml(os)}</span><br>`;
+    }
+    html += '</div>';
+    out.innerHTML = html;
+    return;
+  }
+
+  // SELECT
+  if (!data.rows || data.rows.length === 0) {
+    out.innerHTML = `<div class="result-meta"><span class="pill">SELECT</span></div><div class="msg-box empty">No results returned.</div>`;
+    return;
+  }
+
+  const pillCls = data.rows.length > 0 ? 'green' : '';
+  let html = `<div class="result-meta"><span class="pill">SELECT</span><span class="pill ${pillCls}">${data.rows.length} row(s)</span></div>`;
+  html += '<table><thead><tr>';
+  for (const col of data.vars) {
+    html += `<th>${escHtml(col)}</th>`;
+  }
+  html += '</tr></thead><tbody>';
+
+  for (const row of data.rows) {
+    html += '<tr>';
+    for (const col of data.vars) {
+      const cell = row[col];
+      if (cell === null || cell === undefined) {
+        html += '<td style="color:#4a5568">—</td>';
+      } else if (cell.type === 'uri') {
+        const short = shortenURI(cell.value);
+        const isExternal = cell.value.startsWith('http://dbpedia') ||
+                           cell.value.startsWith('http://sws.geonames') ||
+                           cell.value.startsWith('http://www.wikidata') ||
+                           cell.value.startsWith('https://sws.geonames');
+        if (isExternal) {
+          html += `<td class="uri"><a href="${escHtml(cell.value)}" target="_blank" style="color:#76e4f7;text-decoration:none" title="${escHtml(cell.value)}">${escHtml(short)} ↗</a></td>`;
+        } else {
+          const local = cell.value.startsWith('http://semantic-football.org/')
+            ? cell.value.replace('http://semantic-football.org', '').replace(/#.*$/, '') : null;
+          html += local
+            ? `<td class="uri"><a href="${escHtml(local)}" style="color:#76e4f7;text-decoration:none" title="${escHtml(cell.value)}">${escHtml(short)}</a></td>`
+            : `<td class="uri" title="${escHtml(cell.value)}">${escHtml(short)}</td>`;
+        }
+      } else if (cell.type === 'literal') {
+        const v = cell.value;
+        const isNum = !isNaN(v) && v !== '';
+        const isBool = v === 'true' || v === 'false';
+        if (isNum) {
+          html += `<td class="num">${escHtml(v)}</td>`;
+        } else if (isBool) {
+          html += `<td class="bool-${v}">${v === 'true' ? '✔' : '✘'}</td>`;
+        } else {
+          html += `<td title="${escHtml(v)}">${escHtml(v)}</td>`;
+        }
+      } else {
+        html += `<td>${escHtml(String(cell.value))}</td>`;
+      }
+    }
+    html += '</tr>';
+  }
+  html += '</tbody></table>';
+  out.innerHTML = html;
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Ctrl+Enter to run
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') runQuery();
+});
+</script>
+</body>
+</html>
